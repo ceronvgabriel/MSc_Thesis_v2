@@ -1,0 +1,92 @@
+#Note the availability and prices may change
+
+CPUs:
+Total available quota:
+6 cores
+Standard_D11_v2
+2 cores, 14GB RAM, 100GB storage
+Memory optimized
+6 cores
+$0.17/hr
+Standard_D12_v2
+4 cores, 28GB RAM, 200GB storage
+Memory optimized
+6 cores
+$0.33/hr
+Standard_D2_v2
+2 cores, 7GB RAM, 100GB storage
+General purpose
+6 cores
+$0.13/hr
+Standard_D2_v3
+2 cores, 8GB RAM, 50GB storage
+General purpose
+6 cores
+$0.11/hr
+Standard_D2s_v3
+2 cores, 8GB RAM, 16GB storage
+General purpose
+6 cores
+$0.11/hr
+Standard_D3_v2
+4 cores, 14GB RAM, 200GB storage
+General purpose
+6 cores
+$0.25/hr
+Standard_D4_v3
+4 cores, 16GB RAM, 100GB storage
+General purpose
+6 cores
+$0.22/hr
+Standard_D4s_v3
+4 cores, 16GB RAM, 32GB storage
+General purpose
+6 cores
+$0.22/hr
+Standard_DS11_v2
+2 cores, 14GB RAM, 28GB storage
+Memory optimized
+6 cores
+$0.17/hr
+Standard_DS12_v2
+4 cores, 28GB RAM, 56GB storage
+Memory optimized
+6 cores
+$0.33/hr
+Standard_DS1_v2
+1 cores, 3.5GB RAM, 7GB storage
+General purpose
+6 cores
+$0.06/hr
+Standard_DS2_v2
+2 cores, 7GB RAM, 14GB storage
+General purpose
+6 cores
+$0.13/hr
+Standard_DS3_v2
+4 cores, 14GB RAM, 28GB storage
+General purpose
+6 cores
+$0.25/hr
+Standard_F2s_v2
+2 cores, 4GB RAM, 16GB storage
+Compute optimized
+6 cores
+$0.10/hr
+Standard_F4s_v2
+4 cores, 8GB RAM, 32GB storage
+Compute optimized
+6 cores
+$0.20/hr
+
+GPUs:
+Standard_NC6
+6 cores, 56GB RAM, 380GB storage
+1 x NVIDIA Tesla K80
+6 cores
+$1.08/hr
+Standard_NC6_Promo
+6 cores, 56GB RAM, 380GB storage
+1 x NVIDIA Tesla K80
+6 cores
+$0.48/hr
