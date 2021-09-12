@@ -1,0 +1,35 @@
+{
+    "python.autoComplete.addBrackets": true,
+    "python.languageServer": "Pylance",
+    "python.autoComplete.extraPaths": [
+        "/usr/bin/python3"
+        ],
+        "python.analysis.extraPaths": [
+            "/usr/lib/python3",
+            "C:\\Users\\gaboc\\miniconda3",
+            "C:\\Users\\gaboc\\miniconda3\\lib\\site-packages",
+        ],
+        "python.analysis.completeFunctionParens": true,
+        "files.autoSaveDelay": 10,
+        "jupyter.debugJustMyCode": false,
+        "jupyter.jupyterServerType": "local",
+        "jupyter.jupyterCommandLineArguments": [
+            "jupyter",
+            "notebook",
+            "--NotebookApp.allow_root=True",
+            "--NotebookApp.port=8888"
+        ],
+        "jupyter.experiments.optOutFrom": [
+            "NativeNotebookEditor"
+        ],
+        "jupyter.maxOutputSize": 100,
+        "jupyter.textOutputLimit": 0,
+        "jupyter.themeMatplotlibPlots": true,
+        "files.autoSave": "afterDelay",
+        "editor.autoClosingBrackets": "always",
+        "editor.autoClosingQuotes": "always",
+        "telemetry.enableCrashReporter": false,
+        "code-runner.enableAppInsights": false,
+        "azureML.telemetry": false,
+        "azureML.defaultWorkspaceId": "/subscriptions/36b9c338-c995-4def-aa92-2a7f304aa459/resourceGroups/AzureNotebooks/providers/Microsoft.MachineLearningServices/workspaces/AzureNotebooksNA",
+}
