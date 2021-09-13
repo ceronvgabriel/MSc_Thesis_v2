@@ -22,7 +22,7 @@ import time
 
 
 t_batch_size=1024 # Change this value when needed, also num workers
-n_workers=2
+n_workers=6
 
 test_batch_size=128
 
