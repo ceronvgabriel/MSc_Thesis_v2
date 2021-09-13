@@ -36,6 +36,7 @@ from torchvision import models
 import model_actions
 import az_manage_proc
 import load
+import log
 import many_inj
 
 from pytorchfi_c.core import fault_injection as pfi_core

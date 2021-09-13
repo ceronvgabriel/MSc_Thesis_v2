@@ -3,6 +3,9 @@
     - msr_init: net parameter initialization.
     - progress_bar: progress bar mimic xlua.progress.
 '''
+
+#IF desired function or wrapper is not here, check in log.py
+
 import os
 import sys
 import time
@@ -259,3 +262,8 @@ def save_res(name,func,*args, **kwargs):
         json.dump(res,fp)
     
     return res
+
+def save(to_save,name):
+    os.chmod("./results/",777)
+    with open("./results/"+name +".json", 'w+') as fp:
+        json.dump(to_save,fp)
