@@ -109,10 +109,7 @@ def log_time(func,*args,**kwargs):
     log("End, Exec time: " + str(total) +" "+" ad_info: " + ad_info)
     return res
 
-def save(to_save,name):
-    os.chmod("./results/",777)
-    with open("./results/"+name +".json", 'w+') as fp:
-        json.dump(to_save,fp)
+
 
 
 
