@@ -34,7 +34,7 @@ from utils import progress_bar
 import time
 from torchvision import models
 import model_actions
-from az_manage_proc import *
+import az_manage_proc
 import load
 import many_inj
 
