@@ -103,6 +103,33 @@ def load(save_folder,num_classes=10):
     net.load_state_dict(checkpoint['net'])
     return net
 
+def load_meta(save_folder,num_classes=10):
+    '''Load metadata of trained model,saved state is of the form:
+    state = {
+        'net': net.state_dict(),
+        'train_acc':train_acc_v[-1],
+        'test_acc': test_acc_v[-1],
+        'train_loss' : train_loss_v[-1],
+        'test_loss' : test_loss_v[-1],
+        'epoch': epoch,
+        'best_acc': best_acc,
+        # Next lines are done below
+        #'current_lr': scheduler.get_last_lr(),
+        #'current_lr': optimizer.param_groups[0]['lr'],
+        'parameters': parameters,
+
+    }
+    '''
+
+    os.chmod(save_folder,777)
+    device = 'cuda' if torch.cuda.is_available() else 'cpu'
+
+    if device == 'cuda':
+        cudnn.benchmark = True
+
+    checkpoint = torch.load(save_folder + '/ckpt.pth',map_location=torch.device(device))
+    return checkpoint
+
 #load first custom net from git, the first one you used
 def load_custom(save_folder,num_classes=10):
 

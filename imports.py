@@ -30,7 +30,7 @@ import argparse
 
 #from models import *
 import utils
-from utils import progress_bar
+#from utils import progress_bar
 import time
 from torchvision import models
 import model_actions
