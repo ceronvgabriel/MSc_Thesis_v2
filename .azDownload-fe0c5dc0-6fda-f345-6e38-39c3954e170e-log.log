@@ -1,0 +1,1499 @@
+2021-07-05 23:52:53 INFO     this
+2021-07-05 23:53:16 INFO     this
+2021-07-05 23:55:36 INFO     this
+2021-07-05 23:56:44 INFO     this
+2021-07-05 23:59:08 INFO     this
+2021-07-05 23:59:26 INFO     this
+2021-07-05 23:59:54 INFO     this
+2021-07-06 00:19:35 INFO     this
+2021-07-06 00:21:54 INFO     this
+2021-07-06 03:15:54 INFO     this
+2021-07-06 03:16:16 INFO     this
+2021-07-06 06:03:46 INFO     Exec time: 264.942561697ERROR  saved: test_stride epochs: 200
+2021-07-06 06:08:50 INFO     Exec time: 2.208512626000015 ERROR: The size of tensor a (2) must match the size of tensor b (4) at non-singleton dimension 3  saved: test_stride epochs: 200
+2021-07-06 06:30:34 INFO     generated new fontManager
+2021-07-06 07:08:52 INFO     end
+2021-07-06 08:31:23 INFO     Exec time: 4259.369780827best_acc: 88.59  saved: default_b_size_256 epochs: 200
+2021-07-06 09:34:44 INFO     Exec time: 3787.6962164450006best_acc: 88.73  saved: default_b_size_512 epochs: 200
+2021-07-06 09:34:44 INFO     end
+2021-07-15 07:16:45 INFO     Exec time: 2.2845431200000004 ERROR: output with shape [128, 128, 1, 1] doesn't match the broadcast shape [128, 128, 2, 2]  saved: test_stride epochs: 200
+2021-07-15 07:16:45 INFO     Exec time: 1.7468999999437074e-05 ERROR: train_model() missing 1 required positional argument: 'save_folder' 
+2021-07-15 07:16:55 INFO     end
+2021-07-15 07:25:26 INFO     Exec time: 2.1167948339999967 ERROR: output with shape [128, 128, 1, 1] doesn't match the broadcast shape [128, 128, 2, 2]  saved: test_stride epochs: 200
+2021-07-15 07:25:26 INFO     Exec time: 2.1729000003745114e-05 ERROR: train_model() missing 1 required positional argument: 'save_folder' 
+2021-07-15 07:25:48 INFO     end
+2021-07-18 20:14:24 INFO     Exec time: 236.96875best_acc: 38.54  saved: default_test epochs: 1
+2021-07-22 07:24:54 INFO     test
+2021-07-22 07:26:20 INFO     Exec time: 0.00018187499999910983 ERROR: name 'pfi_model' is not defined progressive_inj
+2021-07-22 07:28:31 INFO     Exec time: 0.0002768110000008761 ERROR: name 'pfi_model' is not defined progressive_inj
+2021-07-22 07:29:04 INFO     Exec time: 0.0003045109999995077 ERROR: name 'pfi_model' is not defined progressive_inj
+2021-07-22 07:36:02 INFO     Model output size
+2021-07-22 07:36:02 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-07-22 07:37:18 INFO     Exec time: 2.3968168799999994progressive_inj
+2021-07-22 07:37:55 INFO     Exec time: 2.0325003379999984progressive_inj
+2021-07-22 07:38:40 INFO     Exec time: 2.0800723639999994progressive_inj
+2021-07-22 07:45:21 INFO     Exec time: 40.090009067progressive_inj
+2021-07-22 07:45:57 INFO     Exec time: 2.0507961120000004progressive_inj
+2021-07-22 07:46:48 INFO     Exec time: 2.0852885039999904progressive_inj
+2021-07-22 07:47:03 INFO     Exec time: 2.1024307100000073progressive_inj
+2021-07-22 07:47:52 INFO     Exec time: 2.067129262000009progressive_inj
+2021-07-22 07:48:10 INFO     Exec time: 6.070515907000001progressive_inj
+2021-07-22 07:50:01 INFO     Exec time: 6.148547559999997progressive_inj
+2021-07-22 07:51:14 INFO     Exec time: 6.1745146509999955progressive_inj
+2021-07-22 07:51:54 INFO     Exec time: 6.106554668000001 progressive_inj
+2021-07-22 07:58:38 INFO     Exec time: 288.753905777 progressive_inj
+2021-07-22 07:58:50 INFO     Model output size
+2021-07-22 07:58:50 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-07-22 07:59:08 INFO     Exec time: 6.235349190000022 progressive_inj
+2021-07-22 08:03:50 INFO     Exec time: 264.7607780270001 progressive_inj
+2021-07-22 08:27:21 INFO     Model output size
+2021-07-22 08:27:21 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-07-22 08:27:50 INFO     end run, deleting
+2021-07-22 22:31:05 INFO     Model output size
+2021-07-22 22:31:05 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-07-22 23:49:51 INFO     Model output size
+2021-07-22 23:49:51 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-07-22 23:53:01 INFO     Weight Injection
+2021-07-22 23:53:01 INFO     Layer index: 0
+2021-07-22 23:53:01 INFO     Module: module.conv1.weight
+2021-07-22 23:53:01 INFO     Original value: 0.06807292997837067
+2021-07-22 23:53:01 INFO     Injected value: tensor(0.0681)
+2021-07-22 23:53:14 INFO     Weight Injection
+2021-07-22 23:53:14 INFO     Layer index: 0
+2021-07-22 23:53:14 INFO     Module: module.conv1.weight
+2021-07-22 23:53:14 INFO     Original value: 0.06807292997837067
+2021-07-22 23:53:14 INFO     Injected value: tensor(-0.0681)
+2021-07-22 23:53:21 INFO     Weight Injection
+2021-07-22 23:53:21 INFO     Layer index: 0
+2021-07-22 23:53:21 INFO     Module: module.conv1.weight
+2021-07-22 23:53:21 INFO     Original value: 0.06807292997837067
+2021-07-22 23:53:21 INFO     Injected value: tensor(inf)
+2021-07-22 23:58:36 INFO     Weight Injection
+2021-07-22 23:58:36 INFO     Layer index: 0
+2021-07-22 23:58:36 INFO     Module: module.conv1.weight
+2021-07-22 23:58:36 INFO     Original value: 0.06807292997837067
+2021-07-22 23:58:36 INFO     Injected value: tensor(inf)
+2021-07-22 23:59:38 INFO     Weight Injection
+2021-07-22 23:59:38 INFO     Layer index: 8
+2021-07-22 23:59:38 INFO     Module: module.layer2.1.conv1.weight
+2021-07-22 23:59:38 INFO     Original value: 0.0012791156768798828
+2021-07-22 23:59:38 INFO     Injected value: tensor(inf)
+2021-07-23 00:00:07 INFO     Weight Injection
+2021-07-23 00:00:07 INFO     Layer index: 9
+2021-07-23 00:00:07 INFO     Module: module.layer2.1.conv2.weight
+2021-07-23 00:00:07 INFO     Original value: -0.0032547602895647287
+2021-07-23 00:00:07 INFO     Injected value: tensor(-inf)
+2021-07-23 00:35:02 INFO     Model output size
+2021-07-23 00:35:02 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-07-23 04:04:22 INFO     Model output size
+2021-07-23 04:04:22 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-07-23 04:05:41 INFO     Model output size
+2021-07-23 04:05:41 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-07-23 04:11:18 INFO     Model output size
+2021-07-23 04:11:18 INFO        1  64  32  32
+   1  64  32  32
+   1  64  32  32
+   1  64  32  32
+   1  64  32  32
+   1 128  16  16
+   1 128  16  16
+   1 128  16  16
+   1 128  16  16
+   1 128  16  16
+   1 256   8   8
+   1 256   8   8
+   1 256   8   8
+   1 256   8   8
+   1 256   8   8
+   1 512   4   4
+   1 512   4   4
+   1 512   4   4
+   1 512   4   4
+   1 512   4   4
+2021-07-31 23:14:42 INFO     Model output size
+2021-07-31 23:14:42 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-01 00:12:57 INFO     Model output size
+2021-08-01 00:12:57 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-01 01:12:15 INFO     Model output size
+2021-08-01 01:12:15 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-01 01:49:21 INFO     Model output size
+2021-08-01 01:49:21 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-01 02:07:23 INFO     Model output size
+2021-08-01 02:07:23 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-02 07:40:49 INFO     running
+2021-08-02 07:41:11 INFO     end run, deleting
+2021-08-02 07:57:42 INFO     running
+2021-08-02 08:05:21 INFO     end run, deleting
+2021-08-02 08:07:27 INFO     running
+2021-08-02 08:08:08 INFO     end run, deleting
+2021-08-02 08:08:59 INFO     running
+2021-08-02 08:11:17 INFO     running
+2021-08-02 08:12:04 INFO     end run, deleting
+2021-08-02 08:12:33 INFO     running
+2021-08-02 22:21:33 INFO     running then deleting
+2021-08-02 22:27:29 INFO     running then deleting
+2021-08-02 22:38:47 INFO     Exec time: 545.487049541 test_wrapper
+2021-08-02 22:38:47 INFO     end run, deleting
+2021-08-02 22:56:17 INFO     running then deleting
+2021-08-03 00:14:09 INFO     running then deleting
+2021-08-03 00:42:18 INFO     running then deleting
+2021-08-03 00:52:21 INFO     Exec time: 561.60287437 test_iterate
+2021-08-03 00:52:22 INFO     end run, deleting TEST
+2021-08-03 01:08:29 INFO     running then deleting
+2021-08-03 01:23:15 INFO     Epoch: 40 Accuracy: 78.85
+2021-08-03 01:30:15 INFO     Epoch: 60 Accuracy: 78.95
+2021-08-03 01:37:16 INFO     Epoch: 80 Accuracy: 80.93
+2021-08-03 01:44:16 INFO     Epoch: 100 Accuracy: 80.93
+2021-08-03 01:44:16 INFO     end run, deleting TEST
+2021-08-03 05:14:27 INFO     Running then deleting
+2021-08-03 05:14:28 INFO     Instance Found, delete possible, running: 
+2021-08-03 05:29:52 INFO     Epoch: 40 Accuracy: 79.08
+2021-08-03 05:37:07 INFO     Epoch: 60 Accuracy: 79.21
+2021-08-03 05:44:22 INFO     Epoch: 80 Accuracy: 82.19
+2021-08-03 05:51:35 INFO     Epoch: 100 Accuracy: 82.19
+2021-08-03 05:51:35 INFO     Error: Error: no checkpoint directory found!
+2021-08-03 05:51:35 INFO     end run, deleting vm
+2021-08-07 20:02:15 INFO     Start, logging Exec time.  ad_info: 
+2021-08-09 16:59:03 INFO     Start, logging Exec time.  ad_info: 
+2021-08-09 17:09:36 INFO     Start, logging Exec time.  ad_info: 
+2021-08-09 18:55:39 INFO     Start, logging Exec time.  ad_info: 
+2021-08-09 19:05:19 INFO     Start, logging Exec time.  ad_info: 
+2021-08-09 19:11:16 INFO     Start, logging Exec time.  ad_info: 
+2021-08-09 19:20:35 INFO     Start, logging Exec time.  ad_info: 
+2021-08-09 19:24:11 INFO     Start, logging Exec time.  ad_info: 
+2021-08-09 19:24:54 INFO     Epoch: 1 Accuracy: 37.94 Loss: 1.8861333286762239
+2021-08-09 19:25:43 INFO     Epoch: 1 Accuracy: 49.32 Loss: 1.3763464391231537
+2021-08-09 19:25:43 INFO     End, Exec time: 47.90625  ad_info: 
+2021-08-09 19:34:41 INFO     Start, logging Exec time. Function: log_save ad_info: 
+2021-08-09 19:39:37 INFO     Start, logging Exec time. Function: log_save ad_info: 
+2021-08-09 19:44:10 INFO     Start, logging Exec time. Function: log_save ad_info: 
+2021-08-09 19:44:54 INFO     Epoch: 1 Accuracy: 39.16 Loss: 1.6292165768146516
+2021-08-09 19:45:38 INFO     Epoch: 1 Accuracy: 49.14 Loss: 1.4049603486061095
+2021-08-09 19:45:38 INFO     Result Saved: progressive_test
+2021-08-09 19:45:38 INFO     End, Exec time: 50.390625  ad_info: 
+2021-08-09 20:08:19 INFO     Start, logging Exec time. Function: inner_function ad_info: 
+2021-08-09 20:09:02 INFO     Result Saved: progressive_test_epoch_1
+2021-08-09 20:09:02 INFO     Epoch: 1 Accuracy: 40.87 Loss: 1.6625454032421112
+2021-08-09 20:09:45 INFO     Result Saved: progressive_test_epoch_2
+2021-08-09 20:09:45 INFO     Epoch: 1 Accuracy: 48.23 Loss: 1.4022885262966156
+2021-08-09 20:09:45 INFO     End, Exec time: 49.546875  ad_info: 
+2021-08-09 20:55:23 INFO     Start, logging Exec time. Function: inner_function ad_info: 
+2021-08-09 20:56:51 INFO     Result Saved: progressive_test_epoch_2
+2021-08-09 20:56:51 INFO     Epoch: 2 Accuracy: 43.61 Loss: 1.5182638669013977
+2021-08-09 20:58:16 INFO     Result Saved: progressive_test_epoch_4
+2021-08-09 20:58:16 INFO     Epoch: 2 Accuracy: 55.79 Loss: 1.2262833201885224
+2021-08-09 20:59:54 INFO     Result Saved: progressive_test_epoch_6
+2021-08-09 20:59:54 INFO     Epoch: 2 Accuracy: 59.71 Loss: 1.14886055290699
+2021-08-09 21:01:27 INFO     Result Saved: progressive_test_epoch_8
+2021-08-09 21:01:27 INFO     Epoch: 2 Accuracy: 62.29 Loss: 1.1226714265346527
+2021-08-09 21:02:48 INFO     Result Saved: progressive_test_epoch_10
+2021-08-09 21:02:48 INFO     Epoch: 2 Accuracy: 64.06 Loss: 1.0432739108800888
+2021-08-09 21:04:09 INFO     Result Saved: progressive_test_epoch_12
+2021-08-09 21:04:09 INFO     Epoch: 2 Accuracy: 67.71 Loss: 0.9077289247512818
+2021-08-09 21:05:32 INFO     Result Saved: progressive_test_epoch_14
+2021-08-09 21:05:32 INFO     Epoch: 2 Accuracy: 67.4 Loss: 0.9320454466342926
+2021-08-09 21:06:55 INFO     Result Saved: progressive_test_epoch_16
+2021-08-09 21:06:55 INFO     Epoch: 2 Accuracy: 69.8 Loss: 0.8889600676298142
+2021-08-09 21:06:55 INFO     End, Exec time: 374.734375  ad_info: 
+2021-08-09 21:53:01 INFO     Start, logging Exec time. Function: inner_function ad_info: 
+2021-08-09 21:54:35 INFO     End, Exec time: 48.75  ad_info: 
+2021-08-09 21:57:29 INFO     Start, logging Exec time. Function: progressive_train ad_info: 
+2021-08-09 22:00:54 INFO     Start, logging Exec time. Function: progressive_train ad_info: 
+2021-08-09 22:02:19 INFO     Result Saved: progressive_test_epoch_2
+2021-08-09 22:02:19 INFO     Epoch: 2 Accuracy: 46.76 Loss: 1.4601251888275146
+2021-08-09 22:04:23 INFO     Start, logging Exec time. Function: progressive_train ad_info: 
+2021-08-09 22:05:53 INFO     Result Saved: progressive_test_epoch_2
+2021-08-09 22:05:53 INFO     Epoch: 2 Accuracy: 45.82 Loss: 1.478456472158432
+2021-08-09 22:07:30 INFO     Result Saved: progressive_test_epoch_4
+2021-08-09 22:07:30 INFO     Epoch: 4 Accuracy: 58.44 Loss: 1.172588854432106
+2021-08-09 22:09:28 INFO     Start, logging Exec time. Function: progressive_train ad_info: 
+2021-08-09 22:10:59 INFO     Result Saved: progressive_test_epoch_2
+2021-08-09 22:10:59 INFO     Epoch: 2 Accuracy: 48.86 Loss: 1.3740229880809784
+2021-08-09 22:13:06 INFO     Start, logging Exec time. Function: progressive_train ad_info: 
+2021-08-09 22:15:16 INFO     Result Saved: progressive_test_epoch_2
+2021-08-09 22:15:16 INFO     Epoch: 2 Accuracy: 50.92 Loss: 1.3759491837024689
+2021-08-09 22:17:37 INFO     Result Saved: progressive_test_epoch_4
+2021-08-09 22:17:37 INFO     Epoch: 4 Accuracy: 59.5 Loss: 1.133390285372734
+2021-08-09 22:19:54 INFO     Result Saved: progressive_test_epoch_6
+2021-08-09 22:19:54 INFO     Epoch: 6 Accuracy: 64.03 Loss: 1.0223107188940048
+2021-08-09 22:22:59 INFO     Result Saved: progressive_test_epoch_8
+2021-08-09 22:22:59 INFO     Epoch: 8 Accuracy: 69.22 Loss: 0.8843518877029419
+2021-08-09 22:22:59 INFO     End, Exec time: 353.5625  ad_info: 
+2021-08-09 23:26:20 INFO     Start, logging Exec time. Function: progressive_train ad_info: 
+2021-08-09 23:27:43 INFO     Result Saved: progressive_test_epoch_2
+2021-08-09 23:27:43 INFO     Epoch: 2 Accuracy: 53.06 Loss: 1.3635607385635375
+2021-08-09 23:29:02 INFO     Result Saved: progressive_test_epoch_4
+2021-08-09 23:29:02 INFO     Epoch: 4 Accuracy: 64.11 Loss: 1.018156099319458
+2021-08-09 23:30:24 INFO     Result Saved: progressive_test_epoch_6
+2021-08-09 23:30:24 INFO     Epoch: 6 Accuracy: 65.16 Loss: 1.0113466465473175
+2021-08-09 23:31:46 INFO     Result Saved: progressive_test_epoch_8
+2021-08-09 23:31:46 INFO     Epoch: 8 Accuracy: 69.54 Loss: 0.866569048166275
+2021-08-09 23:31:46 INFO     End, Exec time: 184.0  ad_info: 
+2021-08-10 00:12:59 INFO     Start, logging Exec time. Function: progressive_train ad_info: 
+2021-08-10 00:14:36 INFO     Result Saved: progressive_test_epoch_2
+2021-08-10 00:14:36 INFO     Epoch: 2 Accuracy: 45.35 Loss: 1.524775381088257
+2021-08-10 00:15:56 INFO     Result Saved: progressive_test_epoch_4
+2021-08-10 00:15:56 INFO     Epoch: 4 Accuracy: 56.87 Loss: 1.1901725614070893
+2021-08-10 00:17:22 INFO     Result Saved: progressive_test_epoch_6
+2021-08-10 00:17:22 INFO     Epoch: 6 Accuracy: 63.21 Loss: 1.0235307496786117
+2021-08-10 00:18:47 INFO     Result Saved: progressive_test_epoch_8
+2021-08-10 00:18:47 INFO     Epoch: 8 Accuracy: 66.75 Loss: 0.9367105889320374
+2021-08-10 00:18:47 INFO     End, Exec time: 230.765625  ad_info: 
+2021-08-10 20:32:36 INFO     Start, logging Exec time. Function: progressive_train ad_info: 
+2021-08-10 20:34:12 INFO     Result Saved: progressive_test_epoch_2
+2021-08-10 20:34:12 INFO     Epoch: 2 Accuracy: 51.76 Loss: 1.392331223487854
+2021-08-10 20:35:51 INFO     Result Saved: progressive_test_epoch_4
+2021-08-10 20:35:51 INFO     Epoch: 4 Accuracy: 62.07 Loss: 1.0731704223155976
+2021-08-10 20:37:21 INFO     Result Saved: progressive_test_epoch_6
+2021-08-10 20:37:21 INFO     Epoch: 6 Accuracy: 67.82 Loss: 0.9235674500465393
+2021-08-10 20:38:48 INFO     Result Saved: progressive_test_epoch_8
+2021-08-10 20:38:48 INFO     Epoch: 8 Accuracy: 69.31 Loss: 0.9224644190073014
+2021-08-10 20:40:19 INFO     Result Saved: progressive_test_epoch_10
+2021-08-10 20:40:19 INFO     Epoch: 10 Accuracy: 70.76 Loss: 0.8535372740030289
+2021-08-10 20:40:19 INFO     End, Exec time: 247.15625  ad_info: 
+2021-08-10 21:00:47 INFO     Start, logging Exec time. Function: progressive_train ad_info: 
+2021-08-10 21:11:43 INFO     Start, logging Exec time. Function: progressive_train ad_info: 
+2021-08-10 21:15:34 INFO     Start, logging Exec time. Function: progressive_train ad_info: 
+2021-08-10 21:20:42 INFO     Start, logging Exec time. Function: progressive_train ad_info: 
+2021-08-10 21:27:34 INFO     Start, logging Exec time. Function: progressive_train ad_info: 
+2021-08-10 21:30:37 INFO     Start, logging Exec time. Function: progressive_train ad_info: 
+2021-08-10 22:00:24 INFO     Start, logging Exec time. Function: progressive_train ad_info: 
+2021-08-10 22:37:02 INFO     Start, logging Exec time. Function: progressive_train ad_info: 
+2021-08-10 22:38:40 INFO     Result Saved: progressive_test/progressive_test_epoch_2
+2021-08-10 22:38:40 INFO     Epoch: 2 Accuracy: 45.51 Loss: 1.6984152054786683
+2021-08-10 22:40:15 INFO     Result Saved: progressive_test/progressive_test_epoch_4
+2021-08-10 22:40:15 INFO     Epoch: 4 Accuracy: 58.39 Loss: 1.289914682507515
+2021-08-10 22:41:48 INFO     Result Saved: progressive_test/progressive_test_epoch_6
+2021-08-10 22:41:48 INFO     Epoch: 6 Accuracy: 61.67 Loss: 1.1429426538944245
+2021-08-10 22:43:27 INFO     Result Saved: progressive_test/progressive_test_epoch_8
+2021-08-10 22:43:27 INFO     Epoch: 8 Accuracy: 67.3 Loss: 0.9640168666839599
+2021-08-10 22:45:04 INFO     Result Saved: progressive_test/progressive_test_epoch_10
+2021-08-10 22:45:04 INFO     Epoch: 10 Accuracy: 72.16 Loss: 0.8164500480890274
+2021-08-10 22:45:04 INFO     End, Exec time: 244.125  ad_info: 
+2021-08-10 22:56:01 INFO     Start, logging Exec time. Function: progressive_train ad_info: 
+2021-08-10 22:57:26 INFO     Result Saved: progressive_test/progressive_test_epoch_2
+2021-08-10 22:57:26 INFO     Epoch: 2 Accuracy: 48.67 Loss: 1.4222018826007843
+2021-08-10 22:58:54 INFO     Result Saved: progressive_test/progressive_test_epoch_4
+2021-08-10 22:58:54 INFO     Epoch: 4 Accuracy: 59.47 Loss: 1.1525054115056992
+2021-08-10 23:20:02 INFO     Start, logging Exec time. Function: progressive_train ad_info: 
+2021-08-10 23:21:31 INFO     Result Saved: progressive_test/progressive_test_epoch_2
+2021-08-10 23:21:31 INFO     Epoch: 2 Accuracy: 41.19 Loss: 3.0328110575675966
+2021-08-10 23:22:57 INFO     Result Saved: progressive_test/progressive_test_epoch_4
+2021-08-10 23:22:57 INFO     Epoch: 4 Accuracy: 59.12 Loss: 1.1420709943771363
+2021-08-10 23:24:34 INFO     Result Saved: progressive_test/progressive_test_epoch_6
+2021-08-10 23:24:34 INFO     Epoch: 6 Accuracy: 67.84 Loss: 0.9249900269508362
+2021-08-10 23:26:10 INFO     Result Saved: progressive_test/progressive_test_epoch_8
+2021-08-10 23:26:10 INFO     Epoch: 8 Accuracy: 64.82 Loss: 1.0056285631656647
+2021-08-10 23:27:40 INFO     Result Saved: progressive_test/progressive_test_epoch_10
+2021-08-10 23:27:40 INFO     Epoch: 10 Accuracy: 72.83 Loss: 0.7872739613056183
+2021-08-10 23:44:25 INFO     Start, logging Exec time. Function: progressive_train ad_info: 
+2021-08-10 23:45:13 INFO     Result Saved: progressive_test/progressive_test_epoch_1
+2021-08-10 23:45:13 INFO     Epoch: 1 Accuracy: 39.66 Loss: 1.88019082903862
+2021-08-10 23:45:55 INFO     Result Saved: progressive_test/progressive_test_epoch_2
+2021-08-10 23:45:55 INFO     Epoch: 2 Accuracy: 46.42 Loss: 1.5214744806289673
+2021-08-10 23:54:54 INFO     Start, logging Exec time. Function: progressive_train ad_info: 
+2021-08-10 23:55:40 INFO     Result Saved: progressive_test/progressive_test_epoch_1
+2021-08-10 23:55:40 INFO     Epoch: 1 Accuracy: 40.02 Loss: 1.8238318717479707
+2021-08-10 23:56:30 INFO     Result Saved: progressive_test/progressive_test_epoch_2
+2021-08-10 23:56:30 INFO     Epoch: 2 Accuracy: 44.22 Loss: 2.084762830734253
+2021-08-10 23:56:30 INFO     End, Exec time: 51.265625  ad_info: 
+2021-08-11 00:20:39 INFO     Start, logging Exec time. Function: progressive_train ad_info: 
+2021-08-11 00:21:22 INFO     Result Saved: progressive_test/progressive_test_epoch_1
+2021-08-11 00:21:22 INFO     Epoch: 1 Accuracy: 42.66 Loss: 1.5581162083148956
+2021-08-11 00:22:04 INFO     Result Saved: progressive_test/progressive_test_epoch_2
+2021-08-11 00:22:04 INFO     Epoch: 2 Accuracy: 45.68 Loss: 1.4650231218338012
+2021-08-11 00:22:04 INFO     End, Exec time: 47.0625  ad_info: 
+2021-08-11 06:06:44 INFO     Start, logging Exec time. Function: progressive_train ad_info: 
+2021-08-11 06:07:53 INFO     Result Saved: progressive_test/progressive_test_epoch_1
+2021-08-11 06:07:53 INFO     Epoch: 1 Accuracy: 38.63 Loss: 1.6792487871646882
+2021-08-11 06:08:16 INFO     Result Saved: progressive_test/progressive_test_epoch_2
+2021-08-11 06:08:16 INFO     Epoch: 2 Accuracy: 47.93 Loss: 1.4334373092651367
+2021-08-11 06:08:16 INFO     End, Exec time: 40.455217702  ad_info: 
+2021-08-11 06:11:44 INFO     Start, logging Exec time. Function: progressive_train ad_info: 
+2021-08-11 06:12:06 INFO     Result Saved: progressive_test/progressive_test_epoch_1
+2021-08-11 06:12:06 INFO     Epoch: 1 Accuracy: 32.47 Loss: 2.9738944923877715
+2021-08-11 06:12:29 INFO     Result Saved: progressive_test/progressive_test_epoch_2
+2021-08-11 06:12:29 INFO     Epoch: 2 Accuracy: 33.08 Loss: 16.383522663116455
+2021-08-11 06:12:29 INFO     End, Exec time: 36.83764965000001  ad_info: 
+2021-08-11 06:12:50 INFO     Start, logging Exec time. Function: progressive_train ad_info: 
+2021-08-11 06:13:12 INFO     Result Saved: progressive_test/progressive_test_epoch_1
+2021-08-11 06:13:12 INFO     Epoch: 1 Accuracy: 38.96 Loss: 1.7620454609394074
+2021-08-11 06:13:35 INFO     Result Saved: progressive_test/progressive_test_epoch_2
+2021-08-11 06:13:35 INFO     Epoch: 2 Accuracy: 48.19 Loss: 1.4025901472568512
+2021-08-11 06:13:35 INFO     End, Exec time: 36.81353961399999  ad_info: 
+2021-08-11 06:21:15 INFO     Running then deleting
+2021-08-11 06:21:17 INFO     Instance Found, delete possible, running: 
+2021-08-11 06:21:17 INFO     Start, logging Exec time. Function: progressive_train ad_info: 
+2021-08-11 06:21:45 INFO     Result Saved: progressive_test/progressive_test_epoch_1
+2021-08-11 06:21:45 INFO     Epoch: 1 Accuracy: 39.13 Loss: 1.6361732721328734
+2021-08-11 06:22:12 INFO     Result Saved: progressive_test/progressive_test_epoch_2
+2021-08-11 06:22:12 INFO     Epoch: 2 Accuracy: 50.56 Loss: 1.3800953722000122
+2021-08-11 06:22:12 INFO     End, Exec time: 49.85220156099999  ad_info: 
+2021-08-11 06:22:12 INFO     end run, deleting vm
+2021-08-11 06:26:35 INFO     Running then deleting
+2021-08-11 06:26:39 INFO     Instance Found, delete possible, running: 
+2021-08-11 06:26:39 INFO     Start, logging Exec time. Function: progressive_train ad_info: 
+2021-08-11 06:34:47 INFO     Result Saved: default_bs_128/default_bs_128_epoch_20
+2021-08-11 06:34:47 INFO     Epoch: 20 Accuracy: 73.0 Loss: 0.8115331321954727
+2021-08-11 06:42:57 INFO     Result Saved: default_bs_128/default_bs_128_epoch_40
+2021-08-11 06:42:57 INFO     Epoch: 40 Accuracy: 72.67 Loss: 0.8184924951195717
+2021-08-11 06:51:06 INFO     Result Saved: default_bs_128/default_bs_128_epoch_60
+2021-08-11 06:51:06 INFO     Epoch: 60 Accuracy: 74.3 Loss: 0.7818187290430069
+2021-08-11 06:59:15 INFO     Result Saved: default_bs_128/default_bs_128_epoch_80
+2021-08-11 06:59:15 INFO     Epoch: 80 Accuracy: 75.39 Loss: 0.7203742897510529
+2021-08-11 07:07:29 INFO     Result Saved: default_bs_128/default_bs_128_epoch_100
+2021-08-11 07:07:29 INFO     Epoch: 100 Accuracy: 76.31 Loss: 0.7061751461029053
+2021-08-11 07:15:38 INFO     Result Saved: default_bs_128/default_bs_128_epoch_120
+2021-08-11 07:15:38 INFO     Epoch: 120 Accuracy: 75.65 Loss: 0.73043561398983
+2021-08-11 07:23:46 INFO     Result Saved: default_bs_128/default_bs_128_epoch_140
+2021-08-11 07:23:46 INFO     Epoch: 140 Accuracy: 76.26 Loss: 0.7105520913004875
+2021-08-11 07:31:54 INFO     Result Saved: default_bs_128/default_bs_128_epoch_160
+2021-08-11 07:31:54 INFO     Epoch: 160 Accuracy: 78.19 Loss: 0.6356869345903396
+2021-08-11 07:40:01 INFO     Result Saved: default_bs_128/default_bs_128_epoch_180
+2021-08-11 07:40:01 INFO     Epoch: 180 Accuracy: 73.84 Loss: 0.8191239017248154
+2021-08-11 07:48:10 INFO     Result Saved: default_bs_128/default_bs_128_epoch_200
+2021-08-11 07:48:10 INFO     Epoch: 200 Accuracy: 74.5 Loss: 0.7893891721963883
+2021-08-11 07:56:18 INFO     Result Saved: default_bs_128/default_bs_128_epoch_220
+2021-08-11 07:56:18 INFO     Epoch: 220 Accuracy: 74.43 Loss: 0.7655407479405403
+2021-08-11 08:04:28 INFO     Result Saved: default_bs_128/default_bs_128_epoch_240
+2021-08-11 08:04:28 INFO     Epoch: 240 Accuracy: 75.34 Loss: 0.7455400869250297
+2021-08-11 08:12:36 INFO     Result Saved: default_bs_128/default_bs_128_epoch_260
+2021-08-11 08:12:36 INFO     Epoch: 260 Accuracy: 74.5 Loss: 0.7697961249947548
+2021-08-11 08:20:44 INFO     Result Saved: default_bs_128/default_bs_128_epoch_280
+2021-08-11 08:20:44 INFO     Epoch: 280 Accuracy: 75.86 Loss: 0.7158147040009498
+2021-08-11 08:28:57 INFO     Result Saved: default_bs_128/default_bs_128_epoch_300
+2021-08-11 08:28:57 INFO     Epoch: 300 Accuracy: 77.66 Loss: 0.6704799818992615
+2021-08-11 08:28:57 INFO     End, Exec time: 7265.7583666049995  ad_info: 
+2021-08-11 08:28:57 INFO     end run, deleting vm
+2021-08-11 16:45:02 INFO     Running then deleting
+2021-08-11 16:45:18 INFO     Start, logging Exec time. Function: progressive_train ad_info: 
+2021-08-11 16:46:02 INFO     Result Saved: progressive_test/progressive_test_epoch_1
+2021-08-11 16:46:02 INFO     Epoch: 1 Accuracy: 42.73 Loss: 1.5352458083629608
+2021-08-11 16:46:37 INFO     Result Saved: progressive_test/progressive_test_epoch_2
+2021-08-11 16:46:37 INFO     Epoch: 2 Accuracy: 53.24 Loss: 1.2960220205783843
+2021-08-11 16:46:37 INFO     End, Exec time: 65.984375  ad_info: 
+2021-08-11 16:46:59 INFO     Start, logging Exec time. Function: progressive_train ad_info: 
+2021-08-11 16:47:34 INFO     Result Saved: progressive_test/progressive_test_epoch_1
+2021-08-11 16:47:34 INFO     Epoch: 1 Accuracy: 37.33 Loss: 1.7032117605209351
+2021-08-11 16:48:10 INFO     Result Saved: progressive_test/progressive_test_epoch_2
+2021-08-11 16:48:10 INFO     Epoch: 2 Accuracy: 48.59 Loss: 1.4076479530334474
+2021-08-11 16:48:10 INFO     End, Exec time: 60.84375  ad_info: 
+2021-08-11 16:49:34 INFO     Start, logging Exec time. Function: progressive_train ad_info: 
+2021-08-11 16:50:10 INFO     Result Saved: progressive_test/progressive_test_epoch_1
+2021-08-11 16:50:10 INFO     Epoch: 1 Accuracy: 42.85 Loss: 1.5844397485256194
+2021-08-11 16:50:44 INFO     Result Saved: progressive_test/progressive_test_epoch_2
+2021-08-11 16:50:44 INFO     Epoch: 2 Accuracy: 51.1 Loss: 1.3295320928096772
+2021-08-11 16:50:44 INFO     End, Exec time: 62.78125  ad_info: 
+2021-08-11 17:19:46 INFO     Start, logging Exec time. Function: progressive_train_2 ad_info: 
+2021-08-11 17:28:09 INFO     Start, logging Exec time. Function: progressive_train_2 ad_info: 
+2021-08-11 17:48:05 INFO     Start, logging Exec time. Function: progressive_train_2 ad_info: 
+2021-08-11 17:51:01 INFO     End, Exec time: 154.546875  ad_info: 
+2021-08-11 18:11:08 INFO     Start, logging Exec time. Function: progressive_train_2 ad_info: 
+2021-08-11 18:16:17 INFO     Start, logging Exec time. Function: progressive_train_2 ad_info: 
+2021-08-11 18:18:36 INFO     End, Exec time: 117.921875  ad_info: 
+2021-08-11 18:25:05 INFO     Running
+2021-08-11 18:25:05 INFO     Exception:  ERROR: Exception
+2021-08-11 18:30:05 INFO     Running
+2021-08-11 18:30:20 INFO     Running
+2021-08-11 18:30:20 INFO     Exception:  ERROR: Exception<class 'Exception'>log.py70
+2021-08-11 18:34:08 INFO     Running
+2021-08-11 18:34:08 INFO     Exception:  ERROR: Exception<class 'Exception'>log.py70
+2021-08-11 18:34:42 INFO     Running
+2021-08-11 18:34:42 INFO     Exception:  ERROR: Exception<class 'Exception'>log.py70
+2021-08-11 18:35:15 INFO     Running
+2021-08-11 18:35:15 INFO     Exception:  ERROR: Exception<class 'Exception'>log.py70
+2021-08-11 18:45:00 INFO     Running
+2021-08-11 18:45:00 INFO     Exception:  ERROR: Exception<class 'Exception'>log.py71
+2021-08-11 18:46:05 INFO     Running
+2021-08-11 18:46:05 INFO     Exception:  ERROR: Exception<class 'Exception'>log.py71
+2021-08-11 18:52:38 INFO     Running
+2021-08-11 18:52:38 INFO     Exception:  ERROR: Exception
+2021-08-11 18:54:27 INFO     Running
+2021-08-11 18:54:27 INFO     Exception:  ERROR: Exception
+Traceback (most recent call last):
+  File "c:\Users\gaboc\Desktop\Tesis\source_\msc_thesis\log.py", line 71, in try_catch
+    res=func(*args, **kwargs)
+  File "C:\Users\gaboc\AppData\Local\Temp/ipykernel_12464/3962251390.py", line 2, in raise_ex
+    raise Exception("Exception")
+Exception: Exception
+2021-08-12 00:40:03 INFO     Running then deleting
+2021-08-12 00:40:05 INFO     Instance Found, delete possible, running: 
+2021-08-12 00:40:05 INFO     Start, logging Exec time. Function: progressive_train_2 ad_info: 
+2021-08-12 00:42:22 INFO     End, Exec time: 101.493151817  ad_info: 
+2021-08-12 00:42:22 INFO     end run, deleting vm
+2021-08-12 00:43:18 INFO     Running then deleting
+2021-08-12 00:43:18 INFO     Instance Found, delete possible, running: 
+2021-08-12 00:43:18 INFO     Start, logging Exec time. Function: progressive_train_2 ad_info: 
+2021-08-12 02:47:03 INFO     End, Exec time: 7362.756931996  ad_info: 
+2021-08-12 02:47:04 INFO     end run, deleting vm
+2021-08-14 19:16:03 INFO     generated new fontManager
+2021-08-17 00:14:09 INFO     Running then deleting
+2021-08-17 00:14:11 INFO     Instance Found, delete possible, running: 
+2021-08-17 00:14:11 INFO     Start, logging Exec time. Function: progressive_train_3 ad_info: 
+2021-08-17 00:17:20 INFO     End, Exec time: 140.49499614299998  ad_info: 
+2021-08-17 00:17:20 INFO     end run, deleting vm
+2021-08-17 00:20:03 INFO     Running then deleting
+2021-08-17 00:20:05 INFO     Instance Found, delete possible, running: 
+2021-08-17 00:20:05 INFO     Start, logging Exec time. Function: progressive_train_3 ad_info: 
+2021-08-17 00:41:56 INFO     Running then deleting
+2021-08-17 00:41:59 INFO     Instance Found, delete possible, running: 
+2021-08-17 00:41:59 INFO     Start, logging Exec time. Function: progressive_train_3 ad_info: 
+2021-08-17 02:46:36 INFO     End, Exec time: 7373.880328754  ad_info: 
+2021-08-17 02:46:37 INFO     end run, deleting vm
+2021-08-18 05:15:48 INFO     Running then deleting
+2021-08-18 05:15:52 INFO     Instance Found, delete possible, running: 
+2021-08-18 05:15:52 INFO     Start, logging Exec time. Function: progressive_train_3 ad_info: 
+2021-08-18 07:32:44 INFO     End, Exec time: 8097.6537372170005  ad_info: 
+2021-08-18 07:32:44 INFO     end run, deleting vm
+2021-08-18 15:39:11 INFO     generated new fontManager
+2021-08-18 18:57:59 INFO     Running then deleting
+2021-08-18 18:58:01 INFO     Instance Found, delete possible, running: 
+2021-08-18 18:58:01 INFO     Start, logging Exec time. Function: progressive_train_3 ad_info: 
+2021-08-18 18:58:33 INFO     Error: name 'inspect' is not defined
+2021-08-18 18:58:33 INFO     end run, deleting vm
+2021-08-18 19:14:24 INFO     Running then deleting
+2021-08-18 19:14:26 INFO     Instance Found, delete possible, running: 
+2021-08-18 19:14:26 INFO     Start, logging Exec time. Function: progressive_train_3 ad_info: 
+2021-08-18 22:19:36 INFO     End, Exec time: 11002.705453083001  ad_info: 
+2021-08-18 22:19:36 INFO     end run, deleting vm
+2021-08-19 06:00:17 INFO     Running then deleting
+2021-08-19 06:00:20 INFO     Instance Found, delete possible, running: 
+2021-08-19 06:00:20 INFO     Start, logging Exec time. Function: progressive_train_3 ad_info: 
+2021-08-19 06:02:32 INFO     End, Exec time: 86.171327618  ad_info: 
+2021-08-19 06:02:32 INFO     end run, deleting vm
+2021-08-19 06:19:36 INFO     Running then deleting
+2021-08-19 06:19:38 INFO     Instance Found, delete possible, running: 
+2021-08-19 06:19:38 INFO     Start, logging Exec time. Function: progressive_train_3 ad_info: 
+2021-08-19 07:42:56 INFO     End, Exec time: 4848.592706974  ad_info: 
+2021-08-19 07:42:56 INFO     end run, deleting vm
+2021-08-20 04:18:38 INFO     Running then deleting
+2021-08-20 04:18:40 INFO     Instance Found, delete possible, running: 
+2021-08-20 04:18:40 INFO     Start, logging Exec time. Function: progressive_train_3 ad_info: 
+2021-08-20 05:42:21 INFO     End, Exec time: 4800.761367194999  ad_info: 
+2021-08-20 05:42:21 INFO     end run, deleting vm
+2021-08-21 21:24:26 INFO     Model output size
+2021-08-21 21:24:26 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-21 21:25:11 INFO     Model output size
+2021-08-21 21:25:11 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-21 21:25:24 INFO     Model output size
+2021-08-21 21:25:24 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-21 21:25:55 INFO     Model output size
+2021-08-21 21:25:55 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-21 21:26:31 INFO     Model output size
+2021-08-21 21:26:31 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-21 21:28:17 INFO     Model output size
+2021-08-21 21:28:17 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-21 21:29:09 INFO     Model output size
+2021-08-21 21:29:09 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-21 21:31:09 INFO     Model output size
+2021-08-21 21:31:09 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-21 21:31:25 INFO     Model output size
+2021-08-21 21:31:25 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-21 21:31:32 INFO     Model output size
+2021-08-21 21:31:32 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-21 21:33:14 INFO     Model output size
+2021-08-21 21:33:14 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-21 21:34:40 INFO     Model output size
+2021-08-21 21:34:40 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-21 21:35:19 INFO     Model output size
+2021-08-21 21:35:19 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-21 21:35:39 INFO     Model output size
+2021-08-21 21:35:39 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-21 21:35:56 INFO     Model output size
+2021-08-21 21:35:56 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-21 21:38:05 INFO     Model output size
+2021-08-21 21:38:05 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-21 21:52:46 INFO     Model output size
+2021-08-21 21:52:46 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-21 21:53:10 INFO     Model output size
+2021-08-21 21:53:10 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-21 21:53:53 INFO     Model output size
+2021-08-21 21:53:53 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-21 22:09:14 INFO     Model output size
+2021-08-21 22:09:14 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-21 22:38:16 INFO     Model output size
+2021-08-21 22:38:16 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-21 23:05:46 INFO     Model output size
+2021-08-21 23:05:46 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-22 19:45:53 INFO     Model output size
+2021-08-22 19:45:53 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-22 20:21:59 INFO     Model output size
+2021-08-22 20:21:59 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-22 20:22:18 INFO     Model output size
+2021-08-22 20:22:18 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-22 20:22:23 INFO     Model output size
+2021-08-22 20:22:23 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-22 20:24:25 INFO     Model output size
+2021-08-22 20:24:25 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-22 20:24:36 INFO     Model output size
+2021-08-22 20:24:36 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-08-22 20:31:50 INFO     Model output size
+2021-08-22 20:31:50 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-09-05 22:58:53 INFO     Model output size
+2021-09-05 22:58:53 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-09-05 23:16:05 INFO     Model output size
+2021-09-05 23:16:05 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-09-07 21:41:36 INFO     Model output size
+2021-09-07 21:41:36 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-09-07 21:46:33 INFO     Model output size
+2021-09-07 21:46:33 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-09-12 22:41:31 INFO     Running then deleting
+2021-09-12 22:41:33 INFO     Instance Found, delete possible, running: 
+2021-09-12 22:41:33 INFO     Start, logging Exec time. Function: train_plateau ad_info: 
+2021-09-12 22:46:33 INFO     End, Exec time: 263.50759784900004  ad_info: 
+2021-09-12 22:46:33 INFO     end run, deleting vm
+2021-09-12 22:48:00 INFO     Running then deleting
+2021-09-12 22:48:01 INFO     Instance Found, delete possible, running: 
+2021-09-12 22:48:01 INFO     Start, logging Exec time. Function: train_plateau ad_info: 
+2021-09-12 22:50:11 INFO     End, Exec time: 124.62956823900004  ad_info: 
+2021-09-12 22:50:11 INFO     end run, deleting vm
+2021-09-12 22:50:38 INFO     Running then deleting
+2021-09-12 22:50:39 INFO     Instance Found, delete possible, running: 
+2021-09-12 22:50:39 INFO     Start, logging Exec time. Function: train_plateau ad_info: 
+2021-09-12 22:55:04 INFO     End, Exec time: 261.566392213  ad_info: 
+2021-09-12 22:55:04 INFO     end run, deleting vm
+2021-09-12 23:01:02 INFO     Running then deleting
+2021-09-12 23:01:03 INFO     Instance Found, delete possible, running: 
+2021-09-12 23:01:03 INFO     Start, logging Exec time. Function: train_plateau ad_info: 
+2021-09-13 04:08:34 INFO     End, Exec time: 18100.076124281  ad_info: 
+2021-09-13 04:08:34 INFO     end run, deleting vm
+2021-09-13 17:03:27 INFO     Model output size
+2021-09-13 17:03:27 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-09-13 17:21:46 INFO     Model output size
+2021-09-13 17:21:46 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-09-13 23:28:30 INFO     Running then deleting
+2021-09-13 23:28:31 INFO     Instance Found, delete possible, running: 
+2021-09-13 23:28:31 INFO     Start, logging Exec time. Function: inj_zero_plateau ad_info: 
+2021-09-13 23:29:02 INFO     Model output size
+2021-09-13 23:29:02 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
