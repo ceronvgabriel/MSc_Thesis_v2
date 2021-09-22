@@ -1607,3 +1607,173 @@ Exception: Exception
    1 512   1   1
 2021-09-14 01:31:31 INFO     End, Exec time: 6537.738977765  ad_info: 
 2021-09-14 01:31:32 INFO     end run, deleting vm
+2021-09-15 22:16:39 INFO     Running then deleting
+2021-09-15 22:16:40 INFO     Instance Found, delete possible, running: 
+2021-09-15 22:16:40 INFO     Start, logging Exec time. Function: inj_zero_plateau_epoch_160 ad_info: 
+2021-09-15 22:17:24 INFO     Model output size
+2021-09-15 22:17:24 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-09-15 22:36:02 INFO     Running then deleting
+2021-09-15 22:36:04 INFO     Instance Found, delete possible, running: 
+2021-09-15 22:36:04 INFO     Start, logging Exec time. Function: inj_zero_plateau_epoch_160 ad_info: 
+2021-09-15 22:36:08 INFO     Model output size
+2021-09-15 22:36:08 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-09-15 22:58:25 INFO     Error: 'list' object has no attribute 'loss_avg_v'
+2021-09-15 22:58:25 INFO     end run, deleting vm
+2021-09-16 01:44:33 INFO     Running then deleting
+2021-09-16 01:44:36 INFO     Instance Found, delete possible, running: 
+2021-09-16 01:44:36 INFO     Start, logging Exec time. Function: inj_zero_plateau_epoch_160 ad_info: 
+2021-09-16 01:44:40 INFO     Error: name 'h' is not defined
+2021-09-16 01:44:40 INFO     end run, deleting vm
+2021-09-16 01:46:29 INFO     Running then deleting
+2021-09-16 01:46:29 INFO     Instance Found, delete possible, running: 
+2021-09-16 01:46:29 INFO     Start, logging Exec time. Function: inj_zero_plateau_epoch_160 ad_info: 
+2021-09-16 01:46:33 INFO     Model output size
+2021-09-16 01:46:33 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-09-16 02:21:09 INFO     Running then deleting
+2021-09-16 02:21:13 INFO     Instance Found, delete possible, running: 
+2021-09-16 02:21:13 INFO     Start, logging Exec time. Function: inj_zero_plateau_epoch_160 ad_info: 
+2021-09-16 02:21:17 INFO     Model output size
+2021-09-16 02:21:17 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-09-16 02:29:44 INFO     Error: 'list' object has no attribute 'loss_avg_v'
+2021-09-16 02:29:45 INFO     end run, deleting vm
+2021-09-16 02:30:52 INFO     Model output size
+2021-09-16 02:30:52 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-09-16 02:33:32 INFO     Model output size
+2021-09-16 02:33:32 INFO        1  64  16  16
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1  64   8   8
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 128   4   4
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 256   2   2
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+   1 512   1   1
+2021-09-16 02:40:07 INFO     Running then deleting
+2021-09-16 02:40:10 INFO     Instance Found, delete possible, running: 
+2021-09-16 02:40:10 INFO     Start, logging Exec time. Function: inj_zero_plateau_epoch_160 ad_info: 
+2021-09-16 21:57:58 INFO     Running then deleting
+2021-09-16 21:58:02 INFO     Instance Found, delete possible, running: 
+2021-09-16 21:58:02 INFO     Start, logging Exec time. Function: both_80_and_160 ad_info: 
+2021-09-16 23:48:47 INFO     Error: name 'inj_zero_plateau_epoch_80' is not defined
+2021-09-16 23:48:47 INFO     end run, deleting vm
+2021-09-17 01:12:43 INFO     Running then deleting
+2021-09-17 01:12:45 INFO     Instance Found, delete possible, running: 
+2021-09-17 01:12:45 INFO     Start, logging Exec time. Function: inj_zero_plateau_epoch_80 ad_info: 
+2021-09-17 03:08:49 INFO     End, Exec time: 6892.787973627  ad_info: 
+2021-09-17 03:08:49 INFO     end run, deleting vm
+2021-09-20 20:29:22 INFO     Running then deleting
+2021-09-20 20:29:23 INFO     Instance Found, delete possible, running: 
+2021-09-20 20:29:23 INFO     Start, logging Exec time. Function: train_plateau ad_info: 
+2021-09-20 21:14:07 INFO     Error: module 'log' has no attribute 'save'
+2021-09-20 21:14:07 INFO     end run, deleting vm
+2021-09-21 00:21:05 INFO     Running then deleting
+2021-09-21 00:21:07 INFO     Instance Found, delete possible, running: 
+2021-09-21 00:21:07 INFO     Start, logging Exec time. Function: both_80_and_160 ad_info: 
+2021-09-21 01:06:23 INFO     End, Exec time: 2659.141660567  ad_info: 
+2021-09-21 01:06:23 INFO     end run, deleting vm
