@@ -361,6 +361,8 @@ def progressive_inj_zero(pfi_model,total_inj,step,n_exp=5):
     '''total_inj every step, repeat n_exp each one and get avg and std'''
     avg_v=[]
     std_v=[]
+    loss_avg_v=[]
+    loss_std_v=[]
     for k in range(total_inj+1):
         if k%step==0:
             print("Injection: " +str(k)+ " of " + str(total_inj))
@@ -372,8 +374,17 @@ def progressive_inj_zero(pfi_model,total_inj,step,n_exp=5):
                 acc_v.append(acc)
                 loss_v.append(loss)
             av=np.average(acc_v)
+            loss_avg=np.average(loss_v)
             st=np.std(acc_v)
+            loss_st=np.std(loss_v)
+
             avg_v.append(av)
             std_v.append(st)
 
-    return avg_v, std_v
+            loss_avg_v.append(loss_avg)
+            loss_std_v.append(loss_st)
+
+    return avg_v, std_v, loss_avg_v, loss_std_v
+
+
+

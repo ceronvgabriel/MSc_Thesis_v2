@@ -77,15 +77,15 @@ class fault_injection:
         for i in range(len(handles)):
             handles[i].remove()
 
-        logging.info("Model output size")
-        logging.info(
-            "\n".join(
-                [
-                    "".join(["{:4}".format(item) for item in row])
-                    for row in self.OUTPUT_SIZE
-                ]
-            )
-        )
+        # logging.info("Model output size")
+        # logging.info(
+        #     "\n".join(
+        #         [
+        #             "".join(["{:4}".format(item) for item in row])
+        #             for row in self.OUTPUT_SIZE
+        #         ]
+        #     )
+        # )
 
     def fi_reset(self):
         self._fi_state_reset()
