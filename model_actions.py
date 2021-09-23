@@ -105,7 +105,7 @@ def load(save_folder,num_classes=10):
     return net
 
 def load_meta(save_folder,num_classes=10):
-    '''Load metadata of trained model,saved state is of the form:
+    '''Pass full path, Load metadata of trained model,saved state is of the form:
     state = {
         'net': net.state_dict(),
         'train_acc':train_acc_v[-1],
@@ -947,10 +947,15 @@ def progressive_train_4(model,epochs,step=None,tr_bs=128,save_folder=None,criter
                 os.makedirs('checkpoints/'+save_folder+"_epoch_"+str(epoch),777)
             if not os.path.isdir('checkpoints/'+save_folder+"_best_acc"):
                 os.makedirs('checkpoints/'+save_folder+"_best_acc",777)
-            if best_acc_flag:
-                torch.save(state, './checkpoints/'+save_folder+"_best_acc"+'/ckpt.pth')
             
-            torch.save(state, './checkpoints/'+save_folder+"_epoch_"+str(epoch)+'/ckpt.pth')
+            #Save checkpoints
+            if best_acc_flag and epoch%step ==0:
+                torch.save(state, './checkpoints/'+save_folder+"_best_acc"+'/ckpt.pth')
+                torch.save(state, './checkpoints/'+save_folder+"_epoch_"+str(epoch)+'/ckpt.pth')
+            elif best_acc_flag:
+                torch.save(state, './checkpoints/'+save_folder+"_best_acc"+'/ckpt.pth')
+            elif epoch%step ==0:
+                torch.save(state, './checkpoints/'+save_folder+"_epoch_"+str(epoch)+'/ckpt.pth')
 
     #driver:
     for epoch in range(start_epoch, start_epoch+epochs):
