@@ -19,6 +19,7 @@ from utils import progress_bar_none as progress_bar
 import os
 import inspect
 import time
+import utils
 
 
 t_batch_size=1024 # Change this value when needed, also num workers
@@ -973,7 +974,7 @@ def progressive_train_4(model,epochs,step=None,tr_bs=128,save_folder=None,criter
     res_dict["parameters"]=str(eval("parameters"))
     res_dict["tot_time"]=current
 
-    log.save(res_dict,save_folder.split("/")[-1])
+    utils.save(res_dict,save_folder.split("/")[-1])
     return res_dict
 
 
