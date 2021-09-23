@@ -1777,3 +1777,13 @@ Exception: Exception
 2021-09-21 00:21:07 INFO     Start, logging Exec time. Function: both_80_and_160 ad_info: 
 2021-09-21 01:06:23 INFO     End, Exec time: 2659.141660567  ad_info: 
 2021-09-21 01:06:23 INFO     end run, deleting vm
+2021-09-23 03:25:49 INFO     Running then deleting
+2021-09-23 03:25:52 INFO     Instance Found, delete possible, running: 
+2021-09-23 03:25:52 INFO     Start, logging Exec time. Function: train_prog ad_info: 
+2021-09-23 03:27:01 INFO     End, Exec time: 28.083592833999997  ad_info: 
+2021-09-23 03:27:01 INFO     end run, deleting vm
+2021-09-23 03:30:04 INFO     Running then deleting
+2021-09-23 03:30:05 INFO     Instance Found, delete possible, running: 
+2021-09-23 03:30:05 INFO     Start, logging Exec time. Function: train_prog ad_info: 
+2021-09-23 10:02:38 INFO     End, Exec time: 23147.080347667998  ad_info: 
+2021-09-23 10:02:38 INFO     end run, deleting vm
