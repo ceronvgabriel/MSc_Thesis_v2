@@ -810,15 +810,17 @@ def progressive_train_4(model,epochs,step=None,tr_bs=128,save_folder=None,criter
     if step == None:
         step=epochs
     
+    #Setting training batch size
     trainloader_c = torch.utils.data.DataLoader(
     trainset, batch_size=tr_bs, shuffle=True, num_workers=n_workers)
 
+    #just to get dataset sizes
     dataloaders = {"train":trainloader_c, "test": testloader}
     datasets = {"train": trainset , "test":testset}
     dataset_sizes = {x: len(datasets[x]) for x in ['train', 'test']}
     
     print("Training\n")
-    #global args
+    #global args (outer)
     best_acc=0
     start_epoch=1
 
@@ -851,8 +853,10 @@ def progressive_train_4(model,epochs,step=None,tr_bs=128,save_folder=None,criter
     else:
         optimizer=scheduler.optimizer
     
+    #get current function
     current_f=str(inspect.currentframe().f_code.co_name)
     
+    #hyperparameters to save
     parameters={"current_function":current_f,"batch_size":t_batch_size,"n_workers":n_workers,"optimizer":{"class":optimizer.__class__,"dict":optimizer.defaults},"scheduler":{"class":scheduler.__class__,"dict":scheduler.__dict__}}
 
     start = time.process_time()
@@ -878,8 +882,8 @@ def progressive_train_4(model,epochs,step=None,tr_bs=128,save_folder=None,criter
             total += targets.size(0)
             correct += predicted.eq(targets).sum().item()
 
-            progress_bar(batch_idx, len(trainloader_c), 'Loss: %.3f | Acc: %.3f%% (%d/%d)'
-                        % (train_loss/(batch_idx+1), 100.*correct/total, correct, total))
+            # progress_bar(batch_idx, len(trainloader_c), 'Loss: %.3f | Acc: %.3f%% (%d/%d)'
+            #             % (train_loss/(batch_idx+1), 100.*correct/total, correct, total))
 
         train_acc=100.*correct/total
         train_acc_v.append(train_acc)
@@ -907,22 +911,25 @@ def progressive_train_4(model,epochs,step=None,tr_bs=128,save_folder=None,criter
                 total += targets.size(0)
                 correct += predicted.eq(targets).sum().item()
 
-                progress_bar(batch_idx, len(testloader), 'Loss: %.3f | Acc: %.3f%% (%d/%d)'
-                            % (test_loss/(batch_idx+1), 100.*correct/total, correct, total))
+                # progress_bar(batch_idx, len(testloader), 'Loss: %.3f | Acc: %.3f%% (%d/%d)'
+                #             % (test_loss/(batch_idx+1), 100.*correct/total, correct, total))
 
             test_acc=100.*correct/total
             test_acc_v.append(test_acc)
     
             test_loss_avg= test_loss / dataset_sizes["test"]
             test_loss_v.append(test_loss_avg)
-        best_acc_flag=0
+        
         acc = 100.*correct/total
+
+        #Check if it is the best acc up to now
+        best_acc_flag=0
         if acc>best_acc:
             best_acc = acc
             best_acc_flag=1
 
-        #Save only models for the given step
-        if epoch%step ==0 or acc > best_acc:
+        #Save only models for the given step or best acc
+        if epoch%step ==0 or best_acc_flag==1:
             print('Saving.. epoch: ' + str(epoch) +"\n")
             state = {
                 'net': net.state_dict(),
@@ -932,9 +939,6 @@ def progressive_train_4(model,epochs,step=None,tr_bs=128,save_folder=None,criter
                 'test_loss' : test_loss_v[-1],
                 'epoch': epoch,
                 'best_acc': best_acc,
-                # Next lines are done below
-                #'current_lr': scheduler.get_last_lr(),
-                #'current_lr': optimizer.param_groups[0]['lr'],
                 'parameters': parameters,
 
             }
