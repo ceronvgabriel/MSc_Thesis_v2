@@ -1787,3 +1787,8 @@ Exception: Exception
 2021-09-23 03:30:05 INFO     Start, logging Exec time. Function: train_prog ad_info: 
 2021-09-23 10:02:38 INFO     End, Exec time: 23147.080347667998  ad_info: 
 2021-09-23 10:02:38 INFO     end run, deleting vm
+2021-09-23 23:53:27 INFO     Running then deleting
+2021-09-23 23:53:31 INFO     Instance Found, delete possible, running: 
+2021-09-23 23:53:31 INFO     Start, logging Exec time. Function: inj_zero_plateau_epoch_160 ad_info: 
+2021-09-24 01:22:45 INFO     End, Exec time: 5269.557036794  ad_info: 
+2021-09-24 01:22:45 INFO     end run, deleting vm
