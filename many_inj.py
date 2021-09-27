@@ -155,6 +155,7 @@ def _flip_bit_signed( orig_value, max_value, bit_pos):
 
 def many_n_inj(
     pfi_model,n_inj, min_val=-1, max_val=1
+
 ):
     batch, conv_num, c_rand, h_rand, w_rand, value = ([] for i in range(6))
 
