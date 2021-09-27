@@ -2,8 +2,6 @@
 import random
 import logging
 import torch
-from pytorchfi import core
-import pdb
 
 
 """
@@ -15,16 +13,15 @@ def random_batch_element(pfi_model):
     return random.randint(0, pfi_model.get_total_batches() - 1)
 
 
-def random_neuron_location(pfi_model, conv=-1):
-    if conv == -1:
-        conv = random.randint(0, pfi_model.get_total_conv() - 1)
+def random_neuron_location(pfi_model, layer=-1):
+    if layer == -1:
+        layer = random.randint(0, pfi_model.get_total_layers() - 1)
 
-    c = random.randint(0, pfi_model.get_fmaps_num(conv) - 1)
-    h = random.randint(0, pfi_model.get_fmaps_H(conv) - 1)
-    w = random.randint(0, pfi_model.get_fmaps_W(conv) - 1)
+    c = random.randint(0, pfi_model.get_fmaps_num(layer) - 1)
+    h = random.randint(0, pfi_model.get_fmaps_H(layer) - 1)
+    w = random.randint(0, pfi_model.get_fmaps_W(layer) - 1)
 
-    return (conv, c, h, w)
-
+    return (layer, c, h, w)
 
 def random_weight_location(pfi_model, conv=-1):
     '''Modified for current model i.e default pytorch resnet (shortcut.0) github resnet downsample.0'''
@@ -151,14 +148,12 @@ def _flip_bit_signed( orig_value, max_value, bit_pos):
     return torch.tensor(new_value, dtype=save_type)
 
 
-#Many Injections
+#Many Neuron Injections
 
 def many_n_inj(
     pfi_model,n_inj, min_val=-1, max_val=1
 ):
-    batch, conv_num, c_rand, h_rand, w_rand, value = ([] for i in range(6))
-
-    #print("N injections: ",n_inj)
+    batch, layer_num, c_rand, h_rand, w_rand, value = ([] for i in range(6))
 
     for ni in range(n_inj):
 
@@ -169,74 +164,23 @@ def many_n_inj(
         err_val = random_value(min_val=min_val, max_val=max_val)
 
         batch.append(i)
-        conv_num.append(conv)
+        layer_num.append(conv)
         c_rand.append(C)
         h_rand.append(H)
         w_rand.append(W)
         value.append(err_val)
 
     return pfi_model.declare_neuron_fi(
-        batch=batch, conv_num=conv_num, c=c_rand, h=h_rand, w=w_rand, value=value
+        batch=batch,
+        layer_num=layer_num,
+        dim1=c_rand,
+        dim2=h_rand,
+        dim3=w_rand,
+        value=value,
     )
 
-def many_n_inj_layer(
-    pfi_model,n_inj,layer, min_val=-1, max_val=1
-):
-    batch, conv_num, c_rand, h_rand, w_rand, value = ([] for i in range(6))
 
-    #print("N injections: ",n_inj)
-
-    for ni in range(n_inj):
-
-      for i in range(pfi_model.get_total_batches()):
-
-          (conv, C, H, W) = random_neuron_location(pfi_model,layer)
-          err_val = random_value(min_val=min_val, max_val=max_val)
-
-          batch.append(i)
-          conv_num.append(layer)
-          c_rand.append(C)
-          h_rand.append(H)
-          w_rand.append(W)
-          value.append(err_val)
-
-    return pfi_model.declare_neuron_fi(
-        batch=batch, conv_num=conv_num, c=c_rand, h=h_rand, w=w_rand, value=value
-    )
-
-def hello():
-  return 0
-
-def many_n_injections_0(
-    pfi_model,n_inj, min_val=-1, max_val=1, randLoc=True, randVal=True
-):
-    batch, conv_num, c_rand, h_rand, w_rand, value = ([] for i in range(6))
-
-    #print("N injections: ",n_inj)
-
-    for ni in range(n_inj):
-
-      if not randLoc:
-          (conv, C, H, W) = random_neuron_location(pfi_model)
-      if not randVal:
-          err_val = random_value(min_val=min_val, max_val=max_val)
-
-      for i in range(pfi_model.get_total_batches()):
-          if randLoc:
-              (conv, C, H, W) = random_neuron_location(pfi_model)
-          if randVal:
-              err_val = random_value(min_val=min_val, max_val=max_val)
-
-          batch.append(i)
-          conv_num.append(conv)
-          c_rand.append(C)
-          h_rand.append(H)
-          w_rand.append(W)
-          value.append(err_val)
-
-    return pfi_model.declare_neuron_fi(
-        batch=batch, conv_num=conv_num, c=c_rand, h=h_rand, w=w_rand, value=value
-    )
+#Weight Injections
 
 def many_w_injections(
     pfi_model,n_inj, min_val=-1, max_val=1, corrupt_conv=-1
