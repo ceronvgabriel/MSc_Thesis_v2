@@ -101,12 +101,14 @@ def exception_handler_e(func):
     return inner_function
 
 def log_time(func,*args,**kwargs):
+    print("Logging time")
     ad_info=""
     log("Start, logging Exec time. "+"Function: " + str(func.__name__) + " ad_info: " + ad_info)
     start = time.process_time()
     res = func(*args, **kwargs)
     total=time.process_time() - start
     log("End, Exec time: " + str(total) +" "+" ad_info: " + ad_info)
+    print("Total time: "+str(total))
     return res
 
 
