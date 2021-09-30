@@ -367,16 +367,17 @@ def progressive_inj_zero(pfi_model,total_inj,step,n_exp=5):
             for i in range(0,n_exp):
                 model_m_inj = many_w_injections_fc(pfi_model,k,min_val=0,max_val=0)
                 acc,loss=model_actions.test(model_m_inj)
+                
                 acc_v.append(acc)
                 loss_v.append(loss)
+            
             av=np.average(acc_v)
-            loss_avg=np.average(loss_v)
             st=np.std(acc_v)
-            loss_st=np.std(loss_v)
-
             avg_v.append(av)
             std_v.append(st)
 
+            loss_avg=np.average(loss_v)
+            loss_st=np.std(loss_v)
             loss_avg_v.append(loss_avg)
             loss_std_v.append(loss_st)
 
