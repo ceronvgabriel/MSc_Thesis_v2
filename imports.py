@@ -14,7 +14,12 @@ import torch.optim as optim
 import torch.nn.functional as F
 import torch.backends.cudnn as cudnn
 import numpy as np
+
 from matplotlib import pyplot as plt
+import matplotlib.style
+import matplotlib as mpl
+mpl.style.use('default')
+
 import numpy
 import sklearn
 import torchvision
