@@ -31,5 +31,4 @@
         "telemetry.enableCrashReporter": false,
         "code-runner.enableAppInsights": false,
         "azureML.telemetry": false,
-        "azureML.defaultWorkspaceId": "/subscriptions/36b9c338-c995-4def-aa92-2a7f304aa459/resourceGroups/AzureNotebooks/providers/Microsoft.MachineLearningServices/workspaces/AzureNotebooksNA",
 }

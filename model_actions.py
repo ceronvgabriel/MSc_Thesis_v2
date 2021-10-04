@@ -930,7 +930,7 @@ def progressive_train_4(model,epochs,step=None,tr_bs=128,save_folder=None,criter
             best_acc_flag=1
 
         #Save only models for the given step or best acc
-        if epoch%step ==0 or best_acc_flag==1:
+        if ((epoch%step) ==0) or best_acc_flag==1:
             print('Saving.. epoch: ' + str(epoch) +"\n")
             state = {
                 'net': net.state_dict(),
@@ -949,7 +949,7 @@ def progressive_train_4(model,epochs,step=None,tr_bs=128,save_folder=None,criter
                 os.makedirs('checkpoints/'+save_folder+"_best_acc",777)
             
             #Save checkpoints
-            if best_acc_flag==1 and epoch%step ==0:
+            if best_acc_flag==1 and ((epoch%step) ==0):
                 torch.save(state, './checkpoints/'+save_folder+"_best_acc"+'/ckpt.pth')
                 torch.save(state, './checkpoints/'+save_folder+"_epoch_"+str(epoch)+'/ckpt.pth')
             elif best_acc_flag==1:
