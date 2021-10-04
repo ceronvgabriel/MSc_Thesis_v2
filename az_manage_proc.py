@@ -6,9 +6,11 @@ def delete():
     from azureml.core import Workspace
     import os
     
+    sid='e12cdd49-c6fd-4978-bf96-2bfd69dfd037' 
     CI_NAME=os.popen("echo $CI_NAME").read().rstrip() # Strip new line
-    sid='36b9c338-c995-4def-aa92-2a7f304aa459' 
-    ws = Workspace.get(name="AzureNotebooksNA", subscription_id=sid, resource_group='AzureNotebooks')
+    WS_NAME="notebooksEast"
+    RG_NAME="notebooksEast"
+    ws = Workspace.get(name=WS_NAME, subscription_id=sid, resource_group=RG_NAME)
 
     try:
         instance = ComputeInstance(workspace=ws, name=CI_NAME)
@@ -31,8 +33,11 @@ def check_vm():
         from azureml.core.compute_target import ComputeTargetException
         from azureml.core import Workspace
         import os
+        sid='e12cdd49-c6fd-4978-bf96-2bfd69dfd037' 
         CI_NAME=os.popen("echo $CI_NAME").read().rstrip() # Strip new line
-        ws = Workspace.get(name="AzureNotebooksNA", subscription_id='36b9c338-c995-4def-aa92-2a7f304aa459', resource_group='AzureNotebooks')
+        WS_NAME="notebooksEast"
+        RG_NAME="notebooksEast"
+        ws = Workspace.get(name=WS_NAME, subscription_id=sid, resource_group=RG_NAME)
         instance = ComputeInstance(workspace=ws, name=CI_NAME)
         print('Found existing instance, use it.')
         flag=True
