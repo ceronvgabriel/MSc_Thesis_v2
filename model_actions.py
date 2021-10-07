@@ -945,10 +945,10 @@ def progressive_train_4(model,epochs,step=None,tr_bs=128,save_folder=None,criter
             }
             
             
-            #Save checkpoints
-            if best_acc_flag==1 and ((epoch%step) ==0):
-                print('Saving best and step..")
 
+            #Save checkpoints
+            if best_acc_flag==1 and epoch%step==0:
+                print('Saving best and step..')
                 if not os.path.isdir('checkpoints/'+save_folder+"_epoch_"+str(epoch)):
                     os.makedirs('checkpoints/'+save_folder+"_epoch_"+str(epoch),777)
                 if not os.path.isdir('checkpoints/'+save_folder+"_best_acc"):
