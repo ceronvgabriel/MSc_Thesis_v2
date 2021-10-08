@@ -993,6 +993,219 @@ def progressive_train_4(model,epochs,step=None,tr_bs=128,save_folder=None,criter
     return res_dict
 
 
+def progressive_train_ws(model,epochs,step=None,tr_bs=128,save_folder=None,criterion=None, scheduler=None):
+    '''Like progressive 4 but saving the weight stats, save_folder must be of the form: "test_progressive3/test_progressive3"'''
+
+    if step == None:
+        step=epochs
+    
+    #Setting training batch size
+    trainloader_c = torch.utils.data.DataLoader(
+    trainset, batch_size=tr_bs, shuffle=True, num_workers=n_workers)
+
+    #just to get dataset sizes
+    dataloaders = {"train":trainloader_c, "test": testloader}
+    datasets = {"train": trainset , "test":testset}
+    dataset_sizes = {x: len(datasets[x]) for x in ['train', 'test']}
+    
+    print("Training\n")
+    #global args (outer)
+    best_acc=0
+    start_epoch=1
+
+    train_acc_v=[]
+    test_acc_v=[]
+
+    train_loss_v=[]
+    test_loss_v=[]
+    current_lr_v=[]
+
+
+    # Model
+
+    net = model
+
+    device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    #device='cpu'
+    net = net.to(device)
+    if device == 'cuda':
+        net = torch.nn.DataParallel(net)
+        cudnn.benchmark = True
+    
+    if criterion is None:
+        criterion = nn.CrossEntropyLoss()
+    
+    if scheduler is None:
+        optimizer = optim.SGD(net.parameters(), lr=0.1, #MOD: lr=args.lr,
+                            momentum=0.9, weight_decay=5e-4)
+        scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=200)
+    else:
+        optimizer=scheduler.optimizer
+    
+    #get current function
+    current_f=str(inspect.currentframe().f_code.co_name)
+    
+    #hyperparameters to save
+    parameters={"current_function":current_f,"batch_size":t_batch_size,"n_workers":n_workers,"optimizer":{"class":optimizer.__class__,"dict":optimizer.defaults},"scheduler":{"class":scheduler.__class__,"dict":scheduler.__dict__}}
+
+    start = time.process_time()
+    current = time.process_time() - start
+
+    # Training
+    def train(epoch):
+        print('\nEpoch: %d' % epoch)
+        net.train()
+        train_loss = 0
+        correct = 0
+        total = 0
+        for batch_idx, (inputs, targets) in enumerate(trainloader_c):
+            inputs, targets = inputs.to(device), targets.to(device)
+            optimizer.zero_grad()
+            outputs = net(inputs)
+            loss = criterion(outputs, targets)
+            loss.backward()
+            optimizer.step()
+
+            train_loss += loss.item() *inputs.size(0)
+            _, predicted = outputs.max(1)
+            total += targets.size(0)
+            correct += predicted.eq(targets).sum().item()
+
+            # progress_bar(batch_idx, len(trainloader_c), 'Loss: %.3f | Acc: %.3f%% (%d/%d)'
+            #             % (train_loss/(batch_idx+1), 100.*correct/total, correct, total))
+
+        train_acc=100.*correct/total
+        train_acc_v.append(train_acc)
+
+        train_loss_avg= train_loss / dataset_sizes["train"]
+        train_loss_v.append(train_loss_avg)
+
+
+    def test(epoch):
+        nonlocal best_acc
+        nonlocal save_folder
+        #nonlocal step
+        net.eval()
+        test_loss = 0
+        correct = 0
+        total = 0
+        with torch.no_grad():
+            for batch_idx, (inputs, targets) in enumerate(testloader):
+                inputs, targets = inputs.to(device), targets.to(device)
+                outputs = net(inputs)
+                loss = criterion(outputs, targets)
+
+                test_loss += loss.item()*inputs.size(0)
+                _, predicted = outputs.max(1)
+                total += targets.size(0)
+                correct += predicted.eq(targets).sum().item()
+
+                # progress_bar(batch_idx, len(testloader), 'Loss: %.3f | Acc: %.3f%% (%d/%d)'
+                #             % (test_loss/(batch_idx+1), 100.*correct/total, correct, total))
+
+            test_acc=100.*correct/total
+            test_acc_v.append(test_acc)
+    
+            test_loss_avg= test_loss / dataset_sizes["test"]
+            test_loss_v.append(test_loss_avg)
+        
+        acc = 100.*correct/total
+
+        #Check if it is the best acc up to now
+        best_acc_flag=0
+        if acc>best_acc:
+            best_acc = acc
+            best_acc_flag=1
+
+        #Save only models for the given step or best acc
+        if ((epoch%step) ==0) or best_acc_flag==1:
+            
+            state = {
+                'net': net.state_dict(),
+                'train_acc':train_acc_v[-1],
+                'test_acc': test_acc_v[-1],
+                'train_loss' : train_loss_v[-1],
+                'test_loss' : test_loss_v[-1],
+                'epoch': epoch,
+                'best_acc': best_acc,
+                'parameters': parameters,
+
+            }
+            
+            
+
+            #Save checkpoints
+            if best_acc_flag==1 and epoch%step==0:
+                print('Saving best and step..')
+                if not os.path.isdir('checkpoints/'+save_folder+"_epoch_"+str(epoch)):
+                    os.makedirs('checkpoints/'+save_folder+"_epoch_"+str(epoch),777)
+                if not os.path.isdir('checkpoints/'+save_folder+"_best_acc"):
+                    os.makedirs('checkpoints/'+save_folder+"_best_acc",777)
+
+                torch.save(state, './checkpoints/'+save_folder+"_best_acc"+'/ckpt.pth')
+                torch.save(state, './checkpoints/'+save_folder+"_epoch_"+str(epoch)+'/ckpt.pth')
+            elif best_acc_flag==1:
+                print("Saving best..")
+                if not os.path.isdir('checkpoints/'+save_folder+"_best_acc"):
+                    os.makedirs('checkpoints/'+save_folder+"_best_acc",777)
+                torch.save(state, './checkpoints/'+save_folder+"_best_acc"+'/ckpt.pth')
+            elif epoch%step ==0:
+                print("Saving step..")
+                if not os.path.isdir('checkpoints/'+save_folder+"_epoch_"+str(epoch)):
+                    os.makedirs('checkpoints/'+save_folder+"_epoch_"+str(epoch),777)
+                torch.save(state, './checkpoints/'+save_folder+"_epoch_"+str(epoch)+'/ckpt.pth')
+            
+    w_dict={}
+    w_dict["min"]=[]
+    w_dict["max"]=[]
+    w_dict["mean"]=[]
+    w_dict["std"]=[]
+
+    def get_weight_stats():
+        nonlocal w_dict
+        conv_w=[]
+        for name, param in net.named_parameters():
+            if "conv" in name and param.size()[2] == 3: # kernels 3x3
+                for i in param.tolist():
+                    for j in i:
+                        conv_w.append(j)
+
+        conv_w_flat = np.array(conv_w).flatten()
+
+        w_dict["min"].append(min(conv_w_flat))
+        w_dict["max"].append(max(conv_w_flat))
+        w_dict["mean"].append(conv_w_flat.mean())
+        w_dict["std"].append(conv_w_flat.std())
+
+    #driver:
+    for epoch in range(start_epoch, start_epoch+epochs):
+        train(epoch)
+        test(epoch)
+        get_weight_stats()
+
+        if scheduler.__class__.__name__== 'CosineAnnealingLR':
+            scheduler.step()
+            current_lr_v.append(scheduler.get_last_lr())
+        if scheduler.__class__.__name__ == 'ReduceLROnPlateau':
+            scheduler.step(test_loss_v[-1])
+            current_lr_v.append(optimizer.param_groups[0]['lr'])
+
+        current = time.process_time() - start
+
+    #save and return training meta data
+    res_dict={}
+    for i in ["train_acc_v","train_loss_v","test_acc_v","test_loss_v","current_lr_v"]:
+        res_dict[i]=eval(i)
+        
+    res_dict["weight_stats"]=w_dict
+    res_dict["parameters"]=str(eval("parameters"))
+    res_dict["tot_time"]=current
+    
+
+    utils.save(res_dict,save_folder.split("/")[-1])
+    return res_dict
+
+
 # def train_model_resume_noEarly(model,epochs,save_folder,resume_folder=None,t_batch_size=128):
     
 #     print("Training")
