@@ -20,6 +20,8 @@ import os
 import inspect
 import time
 import utils
+import numpy
+import numpy as np
 
 
 t_batch_size=1024 # Change this value when needed, also num workers
@@ -1135,25 +1137,25 @@ def progressive_train_ws(model,epochs,step=None,tr_bs=128,save_folder=None,crite
             
 
             #Save checkpoints
-            if best_acc_flag==1 and epoch%step==0:
-                print('Saving best and step..')
-                if not os.path.isdir('checkpoints/'+save_folder+"_epoch_"+str(epoch)):
-                    os.makedirs('checkpoints/'+save_folder+"_epoch_"+str(epoch),777)
-                if not os.path.isdir('checkpoints/'+save_folder+"_best_acc"):
-                    os.makedirs('checkpoints/'+save_folder+"_best_acc",777)
+            # if best_acc_flag==1 and epoch%step==0:
+            #     print('Saving best and step..')
+            #     if not os.path.isdir('checkpoints/'+save_folder+"_epoch_"+str(epoch)):
+            #         os.makedirs('checkpoints/'+save_folder+"_epoch_"+str(epoch),777)
+            #     if not os.path.isdir('checkpoints/'+save_folder+"_best_acc"):
+            #         os.makedirs('checkpoints/'+save_folder+"_best_acc",777)
 
-                torch.save(state, './checkpoints/'+save_folder+"_best_acc"+'/ckpt.pth')
-                torch.save(state, './checkpoints/'+save_folder+"_epoch_"+str(epoch)+'/ckpt.pth')
-            elif best_acc_flag==1:
-                print("Saving best..")
-                if not os.path.isdir('checkpoints/'+save_folder+"_best_acc"):
-                    os.makedirs('checkpoints/'+save_folder+"_best_acc",777)
-                torch.save(state, './checkpoints/'+save_folder+"_best_acc"+'/ckpt.pth')
-            elif epoch%step ==0:
-                print("Saving step..")
-                if not os.path.isdir('checkpoints/'+save_folder+"_epoch_"+str(epoch)):
-                    os.makedirs('checkpoints/'+save_folder+"_epoch_"+str(epoch),777)
-                torch.save(state, './checkpoints/'+save_folder+"_epoch_"+str(epoch)+'/ckpt.pth')
+            #     torch.save(state, './checkpoints/'+save_folder+"_best_acc"+'/ckpt.pth')
+            #     torch.save(state, './checkpoints/'+save_folder+"_epoch_"+str(epoch)+'/ckpt.pth')
+            # elif best_acc_flag==1:
+            #     print("Saving best..")
+            #     if not os.path.isdir('checkpoints/'+save_folder+"_best_acc"):
+            #         os.makedirs('checkpoints/'+save_folder+"_best_acc",777)
+            #     torch.save(state, './checkpoints/'+save_folder+"_best_acc"+'/ckpt.pth')
+            # elif epoch%step ==0:
+            #     print("Saving step..")
+            #     if not os.path.isdir('checkpoints/'+save_folder+"_epoch_"+str(epoch)):
+            #         os.makedirs('checkpoints/'+save_folder+"_epoch_"+str(epoch),777)
+            #     torch.save(state, './checkpoints/'+save_folder+"_epoch_"+str(epoch)+'/ckpt.pth')
             
     w_dict={}
     w_dict["min"]=[]
@@ -1177,8 +1179,12 @@ def progressive_train_ws(model,epochs,step=None,tr_bs=128,save_folder=None,crite
         w_dict["mean"].append(conv_w_flat.mean())
         w_dict["std"].append(conv_w_flat.std())
 
+    get_weight_stats()#Call it once before train, to get ws of untrained net
+
     #driver:
     for epoch in range(start_epoch, start_epoch+epochs):
+
+
         train(epoch)
         test(epoch)
         get_weight_stats()

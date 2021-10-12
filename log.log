@@ -62,3 +62,11 @@
 2021-10-07 01:42:41 INFO     Start, logging Exec time. Function: test_ni ad_info: 
 2021-10-07 03:03:19 INFO     End, Exec time: 4836.239633814  ad_info: 
 2021-10-07 03:03:19 INFO     end run, deleting vm
+2021-10-08 00:50:38 INFO     Running then deleting
+2021-10-08 00:50:39 INFO     Instance Found, delete possible, running: 
+2021-10-08 00:50:39 INFO     Start, logging Exec time. Function: prog_ws ad_info: 
+2021-10-08 00:54:47 INFO     Running then deleting
+2021-10-08 00:54:48 INFO     Instance Found, delete possible, running: 
+2021-10-08 00:54:48 INFO     Start, logging Exec time. Function: prog_ws ad_info: 
+2021-10-08 01:50:59 INFO     End, Exec time: 3348.667643235  ad_info: 
+2021-10-08 01:50:59 INFO     end run, deleting vm
