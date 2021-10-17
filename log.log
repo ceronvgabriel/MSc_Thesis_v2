@@ -70,3 +70,87 @@
 2021-10-08 00:54:48 INFO     Start, logging Exec time. Function: prog_ws ad_info: 
 2021-10-08 01:50:59 INFO     End, Exec time: 3348.667643235  ad_info: 
 2021-10-08 01:50:59 INFO     end run, deleting vm
+2021-10-14 03:13:31 INFO     Running then deleting
+2021-10-14 03:13:33 INFO     Instance Found, delete possible, running: 
+2021-10-14 03:13:33 INFO     Start, logging Exec time. Function: inj_zero_plateau_epoch_80 ad_info: 
+2021-10-14 03:13:33 INFO     Error: [Errno 2] No such file or directory: './checkpoints/bs_128_sch_plateau_wd_0/bs_128_sch_plateau_wd_0_epoch_80'
+2021-10-14 03:13:33 INFO     end run, deleting vm
+2021-10-14 04:05:04 INFO     Running then deleting
+2021-10-14 04:05:05 INFO     Instance Found, delete possible, running: 
+2021-10-14 04:05:05 INFO     Start, logging Exec time. Function: train_prog ad_info: 
+2021-10-14 08:09:34 INFO     End, Exec time: 14390.174454864  ad_info: 
+2021-10-14 08:09:34 INFO     end run, deleting vm
+2021-10-14 19:03:11 INFO     Running then deleting
+2021-10-14 19:03:13 INFO     Instance Found, delete possible, running: 
+2021-10-14 19:03:13 INFO     Start, logging Exec time. Function: train_prog ad_info: 
+2021-10-14 19:20:36 INFO     Running then deleting
+2021-10-14 19:20:40 INFO     Instance Found, delete possible, running: 
+2021-10-14 19:20:40 INFO     Start, logging Exec time. Function: train_prog ad_info: 
+2021-10-14 19:22:00 INFO     Running then deleting
+2021-10-14 19:22:02 INFO     Instance Found, delete possible, running: 
+2021-10-14 19:22:02 INFO     Start, logging Exec time. Function: train_prog ad_info: 
+2021-10-14 21:32:14 INFO     Running then deleting
+2021-10-14 21:32:16 INFO     Instance Found, delete possible, running: 
+2021-10-14 21:32:16 INFO     Start, logging Exec time. Function: train_prog ad_info: 
+2021-10-15 03:29:34 INFO     End, Exec time: 21184.845614136  ad_info: 
+2021-10-15 03:29:34 INFO     end run, deleting vm
+2021-10-15 04:24:25 INFO     Running then deleting
+2021-10-15 04:24:33 INFO     Instance Found, delete possible, running: 
+2021-10-15 04:24:33 INFO     Start, logging Exec time. Function: both_wd_and_alpha ad_info: 
+2021-10-15 13:03:32 INFO     End, Exec time: 30780.936199183  ad_info: 
+2021-10-15 13:03:32 INFO     end run, deleting vm
+2021-10-15 17:54:43 INFO     Running then deleting
+2021-10-15 17:54:44 INFO     Instance Found, delete possible, running: 
+2021-10-15 17:54:44 INFO     Start, logging Exec time. Function: inj_zero_plateau_epoch_80 ad_info: 
+2021-10-15 17:55:27 INFO     Error: name 'h' is not defined
+2021-10-15 17:55:27 INFO     end run, deleting vm
+2021-10-15 18:14:49 INFO     Running then deleting
+2021-10-15 18:14:51 INFO     Instance Found, delete possible, running: 
+2021-10-15 18:14:51 INFO     Start, logging Exec time. Function: inj_zero_plateau_epoch_80 ad_info: 
+2021-10-15 19:50:33 INFO     End, Exec time: 5670.224369816  ad_info: 
+2021-10-15 19:50:33 INFO     end run, deleting vm
+2021-10-15 22:24:20 INFO     Running then deleting
+2021-10-15 22:24:22 INFO     Instance Found, delete possible, running: 
+2021-10-15 22:24:22 INFO     Start, logging Exec time. Function: inj_zero_plateau_epoch_160 ad_info: 
+2021-10-15 22:24:54 INFO     Error: name 'h' is not defined
+2021-10-15 22:24:54 INFO     end run, deleting vm
+2021-10-15 22:38:16 INFO     Running then deleting
+2021-10-15 22:38:17 INFO     Instance Found, delete possible, running: 
+2021-10-15 22:38:17 INFO     Start, logging Exec time. Function: inj_zero_plateau_epoch_160 ad_info: 
+2021-10-15 22:53:05 INFO     End, Exec time: 828.907957744  ad_info: 
+2021-10-15 22:53:05 INFO     end run, deleting vm
+2021-10-16 01:12:36 INFO     Running then deleting
+2021-10-16 01:12:37 INFO     Instance Found, delete possible, running: 
+2021-10-16 01:12:37 INFO     Start, logging Exec time. Function: inj_zero_plateau_epoch_160 ad_info: 
+2021-10-16 01:12:37 INFO     Error: [Errno 2] No such file or directory: './checkpoints/adam_bs_128_sch_plateau_wd_0/adam_bs_128_sch_plateau_wd_0_epoch_160'
+2021-10-16 01:12:37 INFO     end run, deleting vm
+2021-10-16 01:40:09 INFO     Running then deleting
+2021-10-16 01:40:11 INFO     Instance Found, delete possible, running: 
+2021-10-16 01:40:11 INFO     Start, logging Exec time. Function: inj_zero_plateau_epoch_120 ad_info: 
+2021-10-16 01:41:19 INFO     Running then deleting
+2021-10-16 01:41:20 INFO     Instance Found, delete possible, running: 
+2021-10-16 01:41:20 INFO     Start, logging Exec time. Function: inj_zero_plateau_epoch_120 ad_info: 
+2021-10-16 01:55:46 INFO     End, Exec time: 826.473698332  ad_info: 
+2021-10-16 01:55:46 INFO     end run, deleting vm
+2021-10-16 04:17:06 INFO     Running then deleting
+2021-10-16 04:17:07 INFO     Instance Found, delete possible, running: 
+2021-10-16 04:17:07 INFO     Start, logging Exec time. Function: bs_and_beta1 ad_info: 
+2021-10-16 04:17:08 INFO     Error: name 'bs' is not defined
+2021-10-16 04:17:08 INFO     end run, deleting vm
+2021-10-16 04:18:02 INFO     Running then deleting
+2021-10-16 04:18:03 INFO     Instance Found, delete possible, running: 
+2021-10-16 04:18:03 INFO     Start, logging Exec time. Function: bs_and_beta1 ad_info: 
+2021-10-16 04:24:40 INFO     Running then deleting
+2021-10-16 04:24:41 INFO     Instance Found, delete possible, running: 
+2021-10-16 04:24:41 INFO     Start, logging Exec time. Function: bs_and_beta1 ad_info: 
+2021-10-16 04:29:04 INFO     Running then deleting
+2021-10-16 04:29:05 INFO     Instance Found, delete possible, running: 
+2021-10-16 04:29:05 INFO     Start, logging Exec time. Function: bs_and_beta1 ad_info: 
+2021-10-16 04:34:35 INFO     Running then deleting
+2021-10-16 04:34:36 INFO     Instance Found, delete possible, running: 
+2021-10-16 04:34:36 INFO     Start, logging Exec time. Function: bs_and_beta1 ad_info: 
+2021-10-16 04:35:57 INFO     Running then deleting
+2021-10-16 04:35:57 INFO     Instance Found, delete possible, running: 
+2021-10-16 04:35:57 INFO     Start, logging Exec time. Function: bs_and_beta1 ad_info: 
+2021-10-16 16:29:57 INFO     End, Exec time: 42331.258419255  ad_info: 
+2021-10-16 16:29:57 INFO     end run, deleting vm

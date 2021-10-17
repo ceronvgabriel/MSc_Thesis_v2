@@ -37,6 +37,10 @@ import load
 import log
 import many_inj
 from pytorchfi_c.core import fault_injection as pfi_core
+#Used by pfi_core:
+test_batch_size = 100
+c,w,h=3,32,32
+
 print("GPU available: ",torch.cuda.is_available())
 print("OS: ",sys.platform)
 

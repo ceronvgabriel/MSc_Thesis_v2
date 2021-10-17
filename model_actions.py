@@ -22,7 +22,7 @@ import time
 import utils
 import numpy
 import numpy as np
-
+import pdb
 
 t_batch_size=1024 # Change this value when needed, also num workers
 n_workers=6
@@ -84,6 +84,39 @@ def test(model):
 
             #print('Loss: %.3f | Acc: %.3f%% (%d/%d)'%(test_loss/(batch_idx+1), 100.*correct/total, correct, total))
             progress_bar(batch_idx, len(testloader), 'Loss: %.3f | Acc: %.3f%% (%d/%d)'% (test_loss/(batch_idx+1), 100.*correct/total, correct, total))
+        return correct/total , test_loss
+
+def test_bagg(models):
+    #model.eval()
+    criterion = nn.CrossEntropyLoss()
+    device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    test_loss = 0
+    correct = 0
+    total = 0
+    with torch.no_grad():
+        for batch_idx, (inputs, targets) in enumerate(testloader):
+            outputs_v=[]
+            inputs, targets = inputs.to(device), targets.to(device)
+            
+            for i,model in enumerate(models):
+                
+                outputs = model(inputs)
+                if i==0:
+                    outputs_all=outputs
+                else:
+                    outputs_all+=outputs
+                
+            #We are not ussing loss here
+            #loss = criterion(outputs, targets)
+            #test_loss += loss.item()
+            #pdb.set_trace()
+
+            _, predicted = outputs_all.max(1)
+            total += targets.size(0)
+            correct += predicted.eq(targets).sum().item()
+
+            #print('Loss: %.3f | Acc: %.3f%% (%d/%d)'%(test_loss/(batch_idx+1), 100.*correct/total, correct, total))
+            #progress_bar(batch_idx, len(testloader), 'Loss: %.3f | Acc: %.3f%% (%d/%d)'% (test_loss/(batch_idx+1), 100.*correct/total, correct, total))
         return correct/total , test_loss
 
 
@@ -1137,25 +1170,25 @@ def progressive_train_ws(model,epochs,step=None,tr_bs=128,save_folder=None,crite
             
 
             #Save checkpoints
-            # if best_acc_flag==1 and epoch%step==0:
-            #     print('Saving best and step..')
-            #     if not os.path.isdir('checkpoints/'+save_folder+"_epoch_"+str(epoch)):
-            #         os.makedirs('checkpoints/'+save_folder+"_epoch_"+str(epoch),777)
-            #     if not os.path.isdir('checkpoints/'+save_folder+"_best_acc"):
-            #         os.makedirs('checkpoints/'+save_folder+"_best_acc",777)
+            if best_acc_flag==1 and epoch%step==0:
+                print('Saving best and step..')
+                if not os.path.isdir('checkpoints/'+save_folder+"_epoch_"+str(epoch)):
+                    os.makedirs('checkpoints/'+save_folder+"_epoch_"+str(epoch),777)
+                if not os.path.isdir('checkpoints/'+save_folder+"_best_acc"):
+                    os.makedirs('checkpoints/'+save_folder+"_best_acc",777)
 
-            #     torch.save(state, './checkpoints/'+save_folder+"_best_acc"+'/ckpt.pth')
-            #     torch.save(state, './checkpoints/'+save_folder+"_epoch_"+str(epoch)+'/ckpt.pth')
-            # elif best_acc_flag==1:
-            #     print("Saving best..")
-            #     if not os.path.isdir('checkpoints/'+save_folder+"_best_acc"):
-            #         os.makedirs('checkpoints/'+save_folder+"_best_acc",777)
-            #     torch.save(state, './checkpoints/'+save_folder+"_best_acc"+'/ckpt.pth')
-            # elif epoch%step ==0:
-            #     print("Saving step..")
-            #     if not os.path.isdir('checkpoints/'+save_folder+"_epoch_"+str(epoch)):
-            #         os.makedirs('checkpoints/'+save_folder+"_epoch_"+str(epoch),777)
-            #     torch.save(state, './checkpoints/'+save_folder+"_epoch_"+str(epoch)+'/ckpt.pth')
+                torch.save(state, './checkpoints/'+save_folder+"_best_acc"+'/ckpt.pth')
+                torch.save(state, './checkpoints/'+save_folder+"_epoch_"+str(epoch)+'/ckpt.pth')
+            elif best_acc_flag==1:
+                print("Saving best..")
+                if not os.path.isdir('checkpoints/'+save_folder+"_best_acc"):
+                    os.makedirs('checkpoints/'+save_folder+"_best_acc",777)
+                torch.save(state, './checkpoints/'+save_folder+"_best_acc"+'/ckpt.pth')
+            elif epoch%step ==0:
+                print("Saving step..")
+                if not os.path.isdir('checkpoints/'+save_folder+"_epoch_"+str(epoch)):
+                    os.makedirs('checkpoints/'+save_folder+"_epoch_"+str(epoch),777)
+                torch.save(state, './checkpoints/'+save_folder+"_epoch_"+str(epoch)+'/ckpt.pth')
             
     w_dict={}
     w_dict["min"]=[]
