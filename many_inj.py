@@ -383,5 +383,41 @@ def progressive_inj_zero(pfi_model,total_inj,step,n_exp=5):
 
     return avg_v, std_v, loss_avg_v, loss_std_v
 
+def progressive_inj_zero_2(pfi_model,total_inj,step,n_exp=5):
+    '''total_inj every step, repeat n_exp each one and get avg and std'''
+    save_data={}
+    save_data["avg"]=[]
+    save_data["std"]=[]
+    save_data["min"]=[]
+    save_data["max"]=[]
+    save_data["all_values"]=[]
+    save_data["loss_all_values"]=[]
+
+    for k in range(total_inj+1):
+        if k%step==0:
+            print("Injection: " +str(k)+ " of " + str(total_inj))
+            acc_v=[]
+            loss_v=[]
+            for i in range(0,n_exp):
+                model_m_inj = many_w_injections_fc(pfi_model,k,min_val=0,max_val=0)
+                acc,loss=model_actions.test(model_m_inj)
+                
+                acc_v.append(acc)
+                loss_v.append(loss)
+            
+            acc_av=np.average(acc_v)
+            acc_st=np.std(acc_v)
+            acc_min=min(acc_v)
+            acc_max=max(acc_v)
+
+            save_data["avg"].append(acc_av)
+            save_data["std"].append(acc_st)
+            save_data["min"].append(acc_min)
+            save_data["max"].append(acc_max)
+            save_data["all_values"].append(acc_v)
+            save_data["loss_all_values"].append(loss_v)
+
+    return save_data
+
 
 
