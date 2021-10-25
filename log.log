@@ -226,3 +226,76 @@
 2021-10-19 02:08:10 INFO     Start, logging Exec time. Function: inj_zero_plateau_epoch_160 ad_info: 
 2021-10-19 04:01:51 INFO     End, Exec time: 6735.326499915  ad_info: 
 2021-10-19 04:01:52 INFO     end run, deleting vm
+2021-10-20 00:48:55 INFO     Running then deleting
+2021-10-20 00:48:56 INFO     Instance Found, delete possible, running: 
+2021-10-20 00:48:56 INFO     Start, logging Exec time. Function: inj_zero_plateau_epoch_160 ad_info: 
+2021-10-20 00:48:56 INFO     Error: [Errno 2] No such file or directory: './checkpoints/bs_64_sch_plateau/bs_64_sch_plateau_epoch_160'
+2021-10-20 00:48:56 INFO     end run, deleting vm
+2021-10-20 03:03:31 INFO     Running then deleting
+2021-10-20 03:03:33 INFO     Instance Found, delete possible, running: 
+2021-10-20 03:03:33 INFO     Start, logging Exec time. Function: inj_zero_plateau_epoch_160 ad_info: 
+2021-10-20 03:05:15 INFO     Running then deleting
+2021-10-20 03:05:15 INFO     Instance Found, delete possible, running: 
+2021-10-20 03:05:15 INFO     Start, logging Exec time. Function: inj_zero_plateau_epoch_160 ad_info: 
+2021-10-20 03:41:58 INFO     End, Exec time: 2128.283211054  ad_info: 
+2021-10-20 03:41:58 INFO     end run, deleting vm
+2021-10-20 05:10:00 INFO     Running then deleting
+2021-10-20 05:10:02 INFO     Instance Found, delete possible, running: 
+2021-10-20 05:10:02 INFO     Start, logging Exec time. Function: train_plateau ad_info: 
+2021-10-20 10:47:26 INFO     End, Exec time: 19863.848644553  ad_info: 
+2021-10-20 10:47:26 INFO     end run, deleting vm
+2021-10-21 23:01:23 INFO     Running then deleting
+2021-10-21 23:01:24 INFO     Instance Found, delete possible, running: 
+2021-10-21 23:01:24 INFO     Start, logging Exec time. Function: inj_zero_plateau_epoch_160 ad_info: 
+2021-10-21 23:01:25 INFO     Error: [Errno 2] No such file or directory: './checkpoints/adagrad_bs_64/adagrad_bs_64_epoch_160'
+2021-10-21 23:01:25 INFO     end run, deleting vm
+2021-10-22 00:00:18 INFO     Running then deleting
+2021-10-22 00:00:20 INFO     Instance Found, delete possible, running: 
+2021-10-22 00:00:20 INFO     Start, logging Exec time. Function: inj_zero_plateau_epoch_160 ad_info: 
+2021-10-22 00:36:49 INFO     End, Exec time: 2086.329908131  ad_info: 
+2021-10-22 00:36:49 INFO     end run, deleting vm
+2021-10-22 03:54:34 INFO     Running then deleting
+2021-10-22 03:54:37 INFO     Instance Found, delete possible, running: 
+2021-10-22 03:54:37 INFO     Start, logging Exec time. Function: inj_zero_plateau_epoch_160 ad_info: 
+2021-10-22 05:48:12 INFO     End, Exec time: 6729.7050554610005  ad_info: 
+2021-10-22 05:48:12 INFO     end run, deleting vm
+2021-10-23 00:38:10 INFO     Running then deleting
+2021-10-23 00:38:12 INFO     Instance Found, delete possible, running: 
+2021-10-23 00:38:12 INFO     Start, logging Exec time. Function: inj_zero_plateau_epoch_120 ad_info: 
+2021-10-23 02:09:04 INFO     End, Exec time: 5359.886451374  ad_info: 
+2021-10-23 02:09:04 INFO     end run, deleting vm
+2021-10-23 04:41:58 INFO     Running then deleting
+2021-10-23 04:42:00 INFO     Instance Found, delete possible, running: 
+2021-10-23 04:42:00 INFO     Start, logging Exec time. Function: train_prog_bs ad_info: 
+2021-10-23 04:46:23 INFO     Running then deleting
+2021-10-23 04:46:24 INFO     Instance Found, delete possible, running: 
+2021-10-23 04:46:24 INFO     Start, logging Exec time. Function: train_prog_bs ad_info: 
+2021-10-23 10:05:04 INFO     End, Exec time: 18794.327748633998  ad_info: 
+2021-10-23 10:05:04 INFO     end run, deleting vm
+2021-10-23 22:42:51 INFO     Running then deleting
+2021-10-23 22:42:53 INFO     Instance Found, delete possible, running: 
+2021-10-23 22:42:53 INFO     Start, logging Exec time. Function: inj_zero_plateau_epoch_120 ad_info: 
+2021-10-23 23:11:58 INFO     End, Exec time: 1663.2686540749999  ad_info: 
+2021-10-23 23:11:58 INFO     end run, deleting vm
+2021-10-24 01:32:07 INFO     Running then deleting
+2021-10-24 01:32:08 INFO     Instance Found, delete possible, running: 
+2021-10-24 01:32:08 INFO     Start, logging Exec time. Function: inj_zero_plateau_epoch_120 ad_info: 
+2021-10-24 03:05:10 INFO     End, Exec time: 5548.154150026  ad_info: 
+2021-10-24 03:05:10 INFO     end run, deleting vm
+2021-10-24 03:28:48 INFO     Running then deleting
+2021-10-24 03:28:51 INFO     Instance Found, delete possible, running: 
+2021-10-24 03:28:51 INFO     Start, logging Exec time. Function: train_plateau ad_info: 
+2021-10-24 03:29:28 INFO     Running then deleting
+2021-10-24 03:29:29 INFO     Instance Found, delete possible, running: 
+2021-10-24 03:29:29 INFO     Start, logging Exec time. Function: train_plateau ad_info: 
+2021-10-24 08:38:55 INFO     End, Exec time: 18205.167830087998  ad_info: 
+2021-10-24 08:38:55 INFO     end run, deleting vm
+2021-10-25 03:02:58 INFO     Running then deleting
+2021-10-25 03:03:00 INFO     Instance Found, delete possible, running: 
+2021-10-25 03:03:00 INFO     Start, logging Exec time. Function: inj_zero_plateau_epoch_120 ad_info: 
+2021-10-25 03:03:20 INFO     Running then deleting
+2021-10-25 03:03:20 INFO     Instance Found, delete possible, running: 
+2021-10-25 03:03:20 INFO     Start, logging Exec time. Function: inj_zero_plateau_epoch_120 ad_info: 
+2021-10-25 03:06:42 INFO     Running then deleting
+2021-10-25 03:06:43 INFO     Instance Found, delete possible, running: 
+2021-10-25 03:06:43 INFO     Start, logging Exec time. Function: inj_zero_plateau_epoch_120 ad_info: 
