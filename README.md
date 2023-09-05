@@ -1,6 +1,6 @@
 # M.Sc. Thesis: Study and analysis of training strategies to improve the reliability of artificial neural networks.
 
-In this work we present a study and analysis of different methods to train Deep Neural Networks to improve their reliability. Specifically, we train a residual network of 18 layers (ResNet18) with different training parameters and optimizers to see how much the accuracy of these trained models decreases in the presence of faults. We perform fault injections at a software level using the PytorchFI library which works over the framework Pytorch. The Resnet18 was trained on an image recognition task with the CIFAR-10 dataset.
+In this work we present a study and analysis of different methods to train Deep Neural Networks to improve their reliability in the presence of faults. Specifically, we train a residual network of 18 layers (ResNet18) with different training parameters and optimizers to see how much the accuracy of these trained models decreases in the presence of faults. We perform fault injections at a software level using the PytorchFI library which works over the framework Pytorch. The Resnet18 was trained on an image recognition task with the CIFAR-10 dataset.
 
 The most important result in this work is obtained at the moment of comparing reliability between optimizers. After selecting the models which gave the best reliability from the fault injection campaigns, we observe from the experiments that the optimizer which performs better in terms of reliability is SGD, followed by Adagrad, then Rmsprop and finally Adam.
 
